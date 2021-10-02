@@ -139,3 +139,30 @@ p {
     flex-direction: row;
   }
 }
+
+.project {
+  display: block;
+  max-width: 320px;
+  transition: 0.1s ease-in;
+}
+
+.project__image {
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  transition: 0.5s ease-in;
+  width: 320px;
+}
+
+.project:hover {
+  opacity: 0.9;
+  transition: 0.1s ease-in;
+}
+
+.project h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+

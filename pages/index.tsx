@@ -2,8 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
+import { Project } from '../components/Project'
 import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
+import { Project as IProject } from '../types/project'
 import { Skill } from '../types/Skill'
 
 const SKILLS: { [key: string]: Skill } = {
@@ -154,6 +156,19 @@ const Home: NextPage = () => {
     }
   ];
 
+  const projects: Array<IProject> = [
+    {
+      title: 'Dancer Tribe',
+      link: 'https://dancertribe.com/',
+      imageUrl: '/project-dancer-tribe.png',
+      description: 'A directory of dance studios worldwide',
+      skills: [
+        SKILLS.ANGULAR, SKILLS.FIREBASE, SKILLS.ALGOLIA, SKILLS.UIUX, SKILLS.TYPESCRIPT,
+        SKILLS.SCSS
+      ]
+    }
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -201,7 +216,9 @@ const Home: NextPage = () => {
         <br />
 
         <h2>I built</h2>
-
+        {
+          projects.map((p) => <Project content={p} />)
+        }
         <br />
 
         <h2>I talked about</h2>

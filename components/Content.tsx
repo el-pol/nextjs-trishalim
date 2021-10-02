@@ -8,7 +8,8 @@ export const Content = (props: {
   const {
     imageUrl,
     title,
-    link
+    link,
+    description
   } = props.content;
 
   return (
@@ -20,6 +21,7 @@ export const Content = (props: {
           }}
         ></div>
         <h3>{title}</h3>
+        <p>{description}</p>
       </a>
     </Link>
   )
