@@ -60,27 +60,22 @@ p {
   margin-bottom: 2rem;
 }
 
-.experience__headline {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .experience__headline h3 {
   display: inline;
   margin-right: 1rem;
+  margin-bottom: 0;
 }
 
-.experience__headline p {
-  display: inline;
+.experience__headline-title {
+  display: flex;
+  align-items: baseline;
 }
 
 .experience__date {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: gray;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .experience__skills {
@@ -93,6 +88,14 @@ p {
 .experience__skills .skill {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 991px) {
+  .experience__headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .content {

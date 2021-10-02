@@ -17,7 +17,7 @@ export const Experience = (props: {
   return (
     <div className="experience">
       <div className="experience__headline">
-        <div>
+        <div className="experience__headline-title">
           <h3>{company}</h3>
           <p>{position}</p>
         </div>
