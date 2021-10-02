@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Skill } from "./Skill";
+import { Skill } from "./skill";
 
 export interface Experience {
   position: string;

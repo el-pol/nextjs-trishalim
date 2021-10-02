@@ -7,7 +7,7 @@ import { Socials } from '../components/Socials'
 import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
 import { Project as IProject } from '../types/project'
-import { Skill } from '../types/Skill'
+import { Skill } from '../types/skill'
 
 const SKILLS: { [key: string]: Skill } = {
   REACT: {
