@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
@@ -140,6 +141,14 @@ const Home: NextPage = () => {
     }
   ];
 
+  const content = [
+    {
+      title: 'React: How to create a reusable form using React Context',
+      imageUrl: '/content-react-context.png',
+      link: 'https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof'
+    }
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -191,7 +200,9 @@ const Home: NextPage = () => {
         <br />
 
         <h2>I published content</h2>
-
+          {
+            content.map((c) => <Content content={c} />)
+          }
         <br />
 
         <h2>You can find more about me on</h2>
