@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import { ReactNode } from 'react'
 import { Experience } from '../components/Experience'
 import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
@@ -67,6 +65,9 @@ const SKILLS: { [key: string]: Skill } = {
   },
   SCRUM: {
     name: 'Scrum'
+  },
+  UIUX: {
+    name: 'UI/UX Design',
   }
 };
 
@@ -117,12 +118,12 @@ const Home: NextPage = () => {
       dateStart: 'Apr 2017',
       dateEnd: 'Mar 2019',
       description: <p>
-        I worked on a large web application for logistics quote management.
+        I worked on a single page app for logistics quote management.
         I designed and developed a drag and drop form builder which allowed
         for users to resize and format various elements in the form.
       </p>,
       skills: [
-        SKILLS.ANGULAR, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.SPRING, SKILLS.JAVA
+        SKILLS.ANGULAR, SKILLS.UIUX, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.SPRING, SKILLS.JAVA
       ]
     },
     {
