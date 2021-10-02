@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import { Project } from '../components/Project'
+import { Socials } from '../components/Socials'
 import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
 import { Project as IProject } from '../types/project'
@@ -207,6 +208,10 @@ const Home: NextPage = () => {
         <p>
           I'm currently living the island life at Koh Samui 🏝, Thailand.
         </p>
+
+        <br />
+
+        <Socials />
 
         <br />
 
