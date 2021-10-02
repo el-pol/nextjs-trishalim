@@ -36,7 +36,21 @@ const Home: NextPage = () => {
           different timezones.
         </p>
 
-        <hr />
+        <br />
+
+        <h2>I worked at</h2>
+
+        <br />
+
+        <h2>I built</h2>
+
+        <br />
+
+        <h2>I published content</h2>
+
+        <br />
+
+        <h2>You can find more about me on</h2>
       </main>
 
     </div>
