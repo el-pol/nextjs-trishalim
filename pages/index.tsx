@@ -186,23 +186,26 @@ const Home: NextPage = () => {
     }
   ];
 
+  const title = `Trisha Lim - Full Stack Engineer`;
+  const description = `Full Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Trisha Lim</title>
-        <meta name="description" content="Trisha Lim is a Full Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript." />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:url" content="https://trishalim.com" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Trisha Lim - Full Stack Engineer"
+          content={title}
         />
-        <meta name="twitter:card" content="Trisha Lim is a Full Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript." />
+        <meta name="twitter:card" content={description} />
         <meta
           property="og:description"
-          content="Trisha Lim is a Full Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript."
+          content={description}
         />
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
