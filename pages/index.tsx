@@ -177,9 +177,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1>
-          Trisha Lim
-        </h1>
+
+        <div className="headline">
+          <h1>
+            Trisha Lim
+          </h1>
+          <img className="profile-image" src="/profile.png"/>
+        </div>
 
         <br />
 
