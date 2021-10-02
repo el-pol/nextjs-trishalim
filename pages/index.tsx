@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 
   const experiences: Array<IExperience> = [
     {
-      position: 'Full Stack Engineer',
+      position: 'Full-Stack Engineer',
       company: 'Apolinar',
       dateStart: 'Jul 2020',
       dateEnd: 'Present',
@@ -186,8 +186,8 @@ const Home: NextPage = () => {
     }
   ];
 
-  const title = `Trisha Lim - Full Stack Engineer`;
-  const description = `Full Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
+  const title = `Trisha Lim - Full-Stack Engineer`;
+  const description = `Full-Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
 
   return (
     <div className={styles.container}>
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
         </p>
 
         <p>
-          I&apos;m a Full Stack Engineer specializing in React + Next.js + TypeScript with
+          I&apos;m a Full-Stack Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
           I&apos;m dedicated to delivering great user experiences, writing clean code,
           and working closely with designers.
