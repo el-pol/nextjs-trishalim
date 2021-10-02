@@ -112,7 +112,7 @@ const Home: NextPage = () => {
         using Angular with a team of 30+ devs and led tasking of user stories. 
       </p>,
       skills: [
-        SKILLS.ANGULAR, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.GIT
+        SKILLS.ANGULAR, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.GIT, SKILLS.SCRUM
       ]
     },
     {
@@ -139,6 +139,19 @@ const Home: NextPage = () => {
       </p>,
       skills: [
         SKILLS.CPP, SKILLS.GIT, SKILLS.SCRUM
+      ]
+    },
+    {
+      position: 'Software Engineer (Intern)',
+      company: 'Azeus',
+      dateStart: 'Apr 2015',
+      dateEnd: 'May 2015',
+      description: <p>
+        I underwent trainings on React and SQL, then developed a web app
+        using said technologies.
+      </p>,
+      skills: [
+        SKILLS.REACT, SKILLS.MYSQL, SKILLS.SPRING, SKILLS.JAVA
       ]
     }
   ];
