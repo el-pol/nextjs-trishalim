@@ -16,6 +16,57 @@ const SKILLS: { [key: string]: Skill } = {
   },
   CONTENTFUL: {
     name: 'Contentful'
+  },
+  ANGULAR: {
+    name: 'Angular'
+  },
+  HTML: {
+    name: 'HTML'
+  },
+  CSS: {
+    name: 'CSS'
+  },
+  JAVASCRIPT: {
+    name: 'JavaScript'
+  },
+  TYPESCRIPT: {
+    name: 'TypeScript'
+  },
+  SCSS: {
+    name: 'SCSS'
+  },
+  LESS: {
+    name: 'LESS'
+  },
+  GIT: {
+    name: 'Git'
+  },
+  FIREBASE: {
+    name: 'Firebase'
+  },
+  MYSQL: {
+    name: 'MySQL'
+  },
+  ALGOLIA: {
+    name: 'Algolia'
+  },
+  BOOTSTRAP: {
+    name: 'Bootstrap'
+  },
+  SPRING: {
+    name: 'Spring'
+  },
+  JAVA: {
+    name: 'Java'
+  },
+  REDUX: {
+    name: 'Redux'
+  },
+  CPP: {
+    name: 'C++'
+  },
+  SCRUM: {
+    name: 'Scrum'
   }
 };
 
@@ -29,18 +80,61 @@ const Home: NextPage = () => {
       dateEnd: 'Present',
       description: <>
         <p>
-          Apolinar is an award-winning digital team in New Zealand. Among other things,
-          we create content-managed websites for clients in various sectors like
-          healthcare, education, non-profits and tech. 
+          Apolinar is an award-winning digital team in New Zealand. We create
+          content-managed websites for clients in various sectors like
+          healthcare, education, NGO and tech. 
         </p>
         <p>
-          I work on the content-managed sites, implementing pixel-perfect designs across
+          I work on these sites, implementing pixel-perfect designs across
           multiple devices and browsers, while providing a good user experience for
           content editors on the backend in Contentful.
         </p>
       </>,
       skills: [
-        SKILLS.REACT, SKILLS.NEXT, SKILLS.CONTENTFUL
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.CONTENTFUL, SKILLS.ANGULAR, SKILLS.HTML,
+        SKILLS.CSS, SKILLS.SCSS, SKILLS.LESS, SKILLS.TYPESCRIPT, SKILLS.JAVASCRIPT,
+        SKILLS.BOOTSTRAP, SKILLS.GIT, SKILLS.ALGOLIA, SKILLS.REDUX
+      ]
+    },
+    {
+      position: 'Frontend Engineer',
+      company: 'Corebridge',
+      dateStart: 'May 2019',
+      dateEnd: 'Jul 2020',
+      description: <p>
+        Corebridge is a management tool for printing businesses. It's a large
+        complex web app that calculates orders based on a number of costs
+        like labor, machine, materials, etc. I worked on the frontend side 
+        using Angular with a team of 30+ devs and led tasking of user stories. 
+      </p>,
+      skills: [
+        SKILLS.ANGULAR, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.GIT
+      ]
+    },
+    {
+      position: 'Web Developer',
+      company: 'Catapult',
+      dateStart: 'Apr 2017',
+      dateEnd: 'Mar 2019',
+      description: <p>
+        I worked on a large web application for logistics quote management.
+        I designed and developed a drag and drop form builder which allowed
+        for users to resize and format various elements in the form.
+      </p>,
+      skills: [
+        SKILLS.ANGULAR, SKILLS.JAVASCRIPT, SKILLS.TYPESCRIPT, SKILLS.SPRING, SKILLS.JAVA
+      ]
+    },
+    {
+      position: 'Firmware Engineer',
+      company: 'Lexmark Research & Development',
+      dateStart: 'May 2016',
+      dateEnd: 'Mar 2017',
+      description: <p>
+        I developed UI for printers using C++ in a Linux environment.
+      </p>,
+      skills: [
+        SKILLS.CPP, SKILLS.GIT, SKILLS.SCRUM
       ]
     }
   ];
