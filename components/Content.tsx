@@ -14,7 +14,7 @@ export const Content = (props: {
 
   return (
     <Link href={link}>
-      <a href={link} target="_blank" className="content">
+      <a href={link} target="_blank" className="content" rel="noreferrer">
         <div className="content__image"
           style={{
             backgroundImage: `url(${imageUrl})`

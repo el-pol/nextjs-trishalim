@@ -16,7 +16,7 @@ export const Project = (props: {
 
   return (
     <Link href={link}>
-      <a href={link} target="_blank" className="project">
+      <a href={link} target="_blank" className="project" rel="noreferrer">
         <div className="project__image"
           style={{
             backgroundImage: `url(${imageUrl})`
@@ -27,7 +27,7 @@ export const Project = (props: {
           {
             skills &&
             <div className="experience__skills">
-              {skills.map((s) => <Skill content={s} />)}
+              {skills.map((s) => <Skill key={s.name} content={s} />)}
             </div>
           }
           <p>{description}</p>

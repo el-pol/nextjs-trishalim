@@ -26,7 +26,7 @@ export const Experience = (props: {
 
       <div className="experience__skills">
         {
-          skills.map((s) => <Skill content={s} />)
+          skills.map((s) => <Skill key={s.name} content={s} />)
         }
       </div>
 

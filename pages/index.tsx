@@ -106,7 +106,7 @@ const Home: NextPage = () => {
       dateStart: 'May 2019',
       dateEnd: 'Jul 2020',
       description: <p>
-        Corebridge is a management tool for printing businesses. It's a large
+        Corebridge is a management tool for printing businesses. It&apos;s a large
         complex web app that calculates orders based on a number of costs
         like labor, machine, materials, etc. I worked on the frontend side 
         using Angular with a team of 30+ devs and led tasking of user stories. 
@@ -206,24 +206,24 @@ const Home: NextPage = () => {
         <br />
 
         <p>
-          Hey, I'm Trisha! 👋
+          Hey, I&apos;m Trisha! 👋
         </p>
 
         <p>
-          I'm a Full Stack Engineer specializing in React + Next.js + TypeScript with
+          I&apos;m a Full Stack Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
-          I'm dedicated to delivering great user experiences, writing clean code,
+          I&apos;m dedicated to delivering great user experiences, writing clean code,
           and working closely with designers.
         </p>
 
         <p>
-          I've worked on large B2B apps and content-managed websites for various clients in the US,
-          New Zealand and Australia. I've mostly done this remotely, working with teams across
+          I&apos;ve worked on large B2B apps and content-managed websites for various clients in the US,
+          New Zealand and Australia. I&apos;ve mostly done this remotely, working with teams across
           different timezones.
         </p>
 
         <p>
-          I'm currently living the island life at Koh Samui 🏝, Thailand.
+          I&apos;m currently living the island life at Koh Samui 🏝, Thailand.
         </p>
 
         <br />
@@ -237,21 +237,21 @@ const Home: NextPage = () => {
         <h2>I worked at</h2>
           {
             experiences.map((e) => (
-              <Experience content={e} />
+              <Experience content={e} key={e.company} />
             ))
           }
         <br />
 
         <h2>I built</h2>
         {
-          projects.map((p) => <Project content={p} />)
+          projects.map((p) => <Project key={p.link} content={p} />)
         }
         <br />
 
         <h2>I talked about</h2>
         <div className="content-grid">
         {
-          content.map((c) => <Content content={c} />)
+          content.map((c) => <Content key={c.link} content={c} />)
         }
         </div>
         <br />

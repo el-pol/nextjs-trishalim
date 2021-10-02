@@ -37,8 +37,8 @@ export const Socials = (): ReactElement => {
     <div className="socials">
       {
         links.map((l) => (
-          <Link href={l.link}>
-            <a href={l.link} target="_blank">
+          <Link href={l.link} key={l.link}>
+            <a href={l.link} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={l.icon} />
             </a>
           </Link>
