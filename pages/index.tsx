@@ -146,6 +146,11 @@ const Home: NextPage = () => {
       title: 'React: How to create a reusable form using React Context',
       imageUrl: '/content-react-context.png',
       link: 'https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof'
+    },
+    {
+      title: 'How I Became a Digital Nomad',
+      imageUrl: '/content-digital-nomad.png',
+      link: 'https://www.youtube.com/watch?v=ihb6Yu3zy40'
     }
   ];
 
@@ -199,10 +204,12 @@ const Home: NextPage = () => {
 
         <br />
 
-        <h2>I published content</h2>
-          {
-            content.map((c) => <Content content={c} />)
-          }
+        <h2>I talked about</h2>
+        <div className="content-grid">
+        {
+          content.map((c) => <Content content={c} />)
+        }
+        </div>
         <br />
 
         <h2>You can find more about me on</h2>

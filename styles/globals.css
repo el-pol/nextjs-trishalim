@@ -98,9 +98,22 @@ p {
   }
 }
 
+.content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem -1rem;
+  flex-direction: column;
+}
+
+.content-grid .content {
+  margin: 0.5rem 1rem;
+  flex: 1;
+}
+
 .content {
-  max-width: 320px;
   display: block;
+  max-width: 320px;
+  transition: 0.1s ease-in;
 }
 
 .content h3 {
@@ -113,4 +126,16 @@ p {
   background-position: center;
   margin-bottom: 0.5rem;
   border-radius: 6px;
+  transition: 0.5s ease-in;
+}
+
+.content:hover {
+  opacity: 0.9;
+  transition: 0.1s ease-in;
+}
+
+@media screen and (min-width: 600px) {
+  .content-grid {
+    flex-direction: row;
+  }
 }
