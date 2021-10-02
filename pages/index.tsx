@@ -1,9 +1,50 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { ReactNode } from 'react'
+import { Experience } from '../components/Experience'
 import styles from '../styles/Home.module.css'
+import { Experience as IExperience } from '../types/experience'
+import { Skill } from '../types/Skill'
+
+const SKILLS: { [key: string]: Skill } = {
+  REACT: {
+    name: 'React'
+  },
+  NEXT: {
+    name: 'Next.js'
+  },
+  CONTENTFUL: {
+    name: 'Contentful'
+  }
+};
 
 const Home: NextPage = () => {
+
+  const experiences: Array<IExperience> = [
+    {
+      position: 'Full Stack Engineer',
+      company: 'Apolinar',
+      dateStart: 'Jul 2020',
+      dateEnd: 'Present',
+      description: <>
+        <p>
+          Apolinar is an award-winning digital team in New Zealand. Among other things,
+          we create content-managed websites for clients in various sectors like
+          healthcare, education, non-profits and tech. 
+        </p>
+        <p>
+          I work on the content-managed sites, implementing pixel-perfect designs across
+          multiple devices and browsers, while providing a good user experience for
+          content editors on the backend in Contentful.
+        </p>
+      </>,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.CONTENTFUL
+      ]
+    }
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -36,10 +77,18 @@ const Home: NextPage = () => {
           different timezones.
         </p>
 
+        <p>
+          I'm currently living the island life at Koh Samui 🏝, Thailand.
+        </p>
+
         <br />
 
         <h2>I worked at</h2>
-
+          {
+            experiences.map((e) => (
+              <Experience content={e} />
+            ))
+          }
         <br />
 
         <h2>I built</h2>
