@@ -161,7 +161,11 @@ const Home: NextPage = () => {
       title: 'Dancer Tribe',
       link: 'https://dancertribe.com/',
       imageUrl: '/project-dancer-tribe.png',
-      description: 'A directory of dance studios worldwide',
+      description: `
+        Dancer Tribe helps dancers find dance studios worldwide
+        including their schedule, pricing, reviews and photos.
+        Studio owners can also manage their own pages.
+      `,
       skills: [
         SKILLS.ANGULAR, SKILLS.FIREBASE, SKILLS.ALGOLIA, SKILLS.UIUX, SKILLS.TYPESCRIPT,
         SKILLS.SCSS
@@ -210,9 +214,11 @@ const Home: NextPage = () => {
         </p>
 
         <br />
+        <br />
 
         <Socials />
 
+        <br />
         <br />
 
         <h2>I worked at</h2>
@@ -236,8 +242,6 @@ const Home: NextPage = () => {
         }
         </div>
         <br />
-
-        <h2>You can find more about me on</h2>
       </main>
 
     </div>
