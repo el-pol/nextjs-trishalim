@@ -22,7 +22,7 @@ export const Experience = (props: {
         <div className="experience__headline-title">
           <h3>
             <Link href={link}>
-              <a href={link} target="_blank" rel="nofollow">
+              <a href={link} target="_blank" rel="nofollow noreferrer">
                 {company}
               </a>
             </Link>
