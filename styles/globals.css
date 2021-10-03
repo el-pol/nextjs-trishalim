@@ -83,6 +83,10 @@ p {
   margin: 3rem 0;
 }
 
+.experience:last-child {
+  margin-bottom: 0;
+}
+
 .experience__headline h3 {
   display: inline;
   margin-right: 1rem;
