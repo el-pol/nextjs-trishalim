@@ -227,3 +227,19 @@ p {
   left: 0;
   top: -3px;
 }
+
+.cta {
+  background-color: black;
+  color: white;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  transition: 0.2s ease-in;
+}
+
+.cta:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s ease-in;
+}

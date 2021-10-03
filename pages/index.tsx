@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+import React from 'react'
 import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import { Project } from '../components/Project'
@@ -291,6 +293,22 @@ const Home: NextPage = () => {
           <li><span>👩🏽‍💻</span> I have set focused hours with no calls. I prefer to batch tasks like calls and code reviews.</li>
           <li><span>🎨</span> I have enough time and energy left in the day to work on my own stuff and be creative.</li>
         </ul>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Link href="mailto:limtrishajean@gmail.com">
+            <a href="mailto:limtrishajean@gmail.com" className="cta">
+              contact me
+            </a>
+          </Link>
+        </div>
 
         <br />
         <br />
