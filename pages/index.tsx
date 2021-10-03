@@ -251,17 +251,19 @@ const Home: NextPage = () => {
         <br />
 
         <h2>Experience</h2>
-          {
-            experiences.map((e) => (
-              <Experience content={e} key={e.company} />
-            ))
-          }
+        {
+          experiences.map((e) => (
+            <Experience content={e} key={e.company} />
+          ))
+        }
+
         <br />
 
         <h2>I build</h2>
         {
           projects.map((p) => <Project key={p.link} content={p} />)
         }
+
         <br />
 
         <h2>I talk about</h2>
@@ -270,7 +272,24 @@ const Home: NextPage = () => {
           content.map((c) => <Content key={c.link} content={c} />)
         }
         </div>
+
         <br />
+
+        <h2>My flaws</h2>
+        <ul className="emoji-list">
+          <li><span>🧠</span> It takes me a long time to context switch. I prefer to batch calls and messaging.</li>
+          <li><span>📄</span> I prefer to send tutorial or documentation links rather than teach.</li>
+          <li><span>🙅🏽‍♀️</span> I have a hard time saying no which leads to overcommitment, then frustration for not being able to handle everything.</li>
+        </ul>
+
+        <br />
+
+        <h2>I do my best work when</h2>
+        <ul className="emoji-list">
+          <li><span>🍵</span> I've had my matcha latte.</li>
+          <li><span>👩🏽‍💻</span> I have set focused hours with no calls and Slack messages.</li>
+          <li><span>🎨</span> I have enough time and energy left in the day to work on my own stuff and be creative.</li>
+        </ul>
       </main>
 
     </div>
