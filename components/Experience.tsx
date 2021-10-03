@@ -24,14 +24,14 @@ export const Experience = (props: {
         <p className="experience__date"> {dateStart} - {dateEnd}</p>
       </div>
 
+      <div>
+        {description}
+      </div>
+
       <div className="experience__skills">
         {
           skills.map((s) => <Skill key={s.name} content={s} />)
         }
-      </div>
-
-      <div>
-        {description}
       </div>
     </div>
   )

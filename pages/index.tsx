@@ -228,14 +228,14 @@ const Home: NextPage = () => {
         <p>
           I&apos;m a Full-Stack Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
-          I&apos;m dedicated to delivering great user experiences, writing clean code,
-          and working closely with designers.
+          I&apos;m dedicated to delivering great user experiences by working closely with
+          designers, and writing good quality code to maintain a good developer experience.
         </p>
 
         <p>
-          I&apos;ve worked on large B2B apps and content-managed websites for various clients in the US,
-          New Zealand and Australia. I&apos;ve mostly done this remotely, working with teams across
-          different timezones.
+          I&apos;ve worked on large B2B apps and content-managed websites for clients in the US,
+          New Zealand and Australia. I'm a seasoned remote worker capable of working across timezones
+          with teams of diverse backgrounds.
         </p>
 
         <p>
@@ -250,7 +250,7 @@ const Home: NextPage = () => {
         <br />
         <br />
 
-        <h2>I worked at</h2>
+        <h2>Experience</h2>
           {
             experiences.map((e) => (
               <Experience content={e} key={e.company} />
@@ -258,13 +258,13 @@ const Home: NextPage = () => {
           }
         <br />
 
-        <h2>I built</h2>
+        <h2>I build</h2>
         {
           projects.map((p) => <Project key={p.link} content={p} />)
         }
         <br />
 
-        <h2>I talked about</h2>
+        <h2>I talk about</h2>
         <div className="content-grid">
         {
           content.map((c) => <Content key={c.link} content={c} />)
