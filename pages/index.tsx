@@ -239,7 +239,7 @@ const Home: NextPage = () => {
 
         <p>
           I&apos;ve worked on large B2B apps and content-managed websites for clients in the US,
-          New Zealand and Australia. I'm a seasoned remote worker capable of working across timezones
+          New Zealand and Australia. I&apos;m a seasoned remote worker capable of working across timezones
           with teams of diverse backgrounds.
         </p>
 
@@ -287,8 +287,8 @@ const Home: NextPage = () => {
 
         <h2>I do my best work when</h2>
         <ul className="emoji-list">
-          <li><span>🍵</span> I've had my matcha latte.</li>
-          <li><span>👩🏽‍💻</span> I have set focused hours with no calls and Slack messages.</li>
+          <li><span>🍵</span> I&apos;ve had my matcha latte.</li>
+          <li><span>👩🏽‍💻</span> I have set focused hours with no calls. I prefer to batch tasks like calls and code reviews.</li>
           <li><span>🎨</span> I have enough time and energy left in the day to work on my own stuff and be creative.</li>
         </ul>
 
