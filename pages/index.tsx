@@ -83,6 +83,7 @@ const Home: NextPage = () => {
       company: 'Apolinar',
       dateStart: 'Jul 2020',
       dateEnd: 'Present',
+      link: 'https://apolinargroup.com/',
       description: <>
         <p>
           Apolinar is an award-winning digital team in New Zealand. We create
@@ -105,6 +106,7 @@ const Home: NextPage = () => {
       company: 'Corebridge',
       dateStart: 'May 2019',
       dateEnd: 'Jul 2020',
+      link: 'https://corebridge.net/',
       description: <p>
         Corebridge is a management tool for printing businesses. It&apos;s a large
         complex web app that calculates orders based on a number of costs
@@ -120,6 +122,7 @@ const Home: NextPage = () => {
       company: 'Catapult',
       dateStart: 'Apr 2017',
       dateEnd: 'Mar 2019',
+      link: 'https://www.magaya.com/catapult-freight-rate-management-software/',
       description: <p>
         I worked on a single page app for logistics quote management.
         I designed and developed a drag and drop form builder which allowed
@@ -134,6 +137,7 @@ const Home: NextPage = () => {
       company: 'Lexmark Research & Development',
       dateStart: 'May 2016',
       dateEnd: 'Mar 2017',
+      link: 'https://www.lexmark.com/en_us.html',
       description: <p>
         I developed UI for printers using C++ in a Linux environment.
       </p>,
@@ -146,6 +150,7 @@ const Home: NextPage = () => {
       company: 'Azeus',
       dateStart: 'Apr 2015',
       dateEnd: 'May 2015',
+      link: 'https://www.azeus.com/',
       description: <p>
         I underwent trainings on React and SQL, then developed a web app
         using said technologies.

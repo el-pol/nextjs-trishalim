@@ -8,4 +8,5 @@ export interface Experience {
   dateEnd: string;
   description: ReactNode;
   skills: Array<Skill>;
+  link: string;
 }
