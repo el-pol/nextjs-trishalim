@@ -29,7 +29,7 @@ export const Socials = (): ReactElement => {
     },
     {
       icon: faEnvelope,
-      link: 'mailto:limtrishajean@gmail.com'
+      link: 'mailto:hello@trishalim.com'
     }
   ];
 

@@ -216,7 +216,7 @@ const Home: NextPage = () => {
         />
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
-
+    
       <main className={styles.main}>
 
         <div className="headline">
@@ -303,8 +303,8 @@ const Home: NextPage = () => {
           display: 'flex',
           justifyContent: 'center'
         }}>
-          <Link href="mailto:limtrishajean@gmail.com">
-            <a href="mailto:limtrishajean@gmail.com" className="cta">
+          <Link href="mailto:hello@trishalim.com">
+            <a href="mailto:hello@trishalim.com" className="cta">
               contact me
             </a>
           </Link>
