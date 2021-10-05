@@ -7,10 +7,10 @@ import Link from "next/link";
 export const Socials = (): ReactElement => {
 
   const links = [
-    {
-      icon: faTwitter,
-      link: 'https://twitter.com/trishathecookie'
-    },
+    // {
+    //   icon: faTwitter,
+    //   link: 'https://twitter.com/trishathecookie'
+    // },
     {
       icon: faDev,
       link: 'https://dev.to/trishathecookie'
