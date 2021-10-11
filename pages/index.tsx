@@ -287,7 +287,7 @@ const Home: NextPage = () => {
         <br />
         <br />
 
-        <h2>I do my best work when</h2>
+        {/* <h2>I do my best work when</h2>
         <ul className="emoji-list">
           <li><span>🍵</span> I&apos;ve had my matcha latte.</li>
           <li><span>👩🏽‍💻</span> I have set focused hours with no calls. I prefer to batch tasks like calls and code reviews.</li>
@@ -295,7 +295,7 @@ const Home: NextPage = () => {
         </ul>
 
         <br />
-        <br />
+        <br /> */}
         <br />
         <br />
 
