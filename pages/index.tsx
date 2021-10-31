@@ -193,8 +193,8 @@ const Home: NextPage = () => {
     }
   ];
 
-  const title = `Trisha Lim - Full-Stack Engineer`;
-  const description = `Full-Stack Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
+  const title = `Trisha Lim - Frontend Engineer`;
+  const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
 
   return (
     <div className={styles.container}>
@@ -233,7 +233,7 @@ const Home: NextPage = () => {
         </p>
 
         <p>
-          I&apos;m a Full-Stack Engineer specializing in React + Next.js + TypeScript with
+          I&apos;m a Frontend Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
           I&apos;m dedicated to delivering great user experiences by working closely with
           designers, and writing good quality code to maintain a good developer experience.
