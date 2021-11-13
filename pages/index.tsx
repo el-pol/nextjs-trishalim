@@ -330,17 +330,17 @@ const Home: NextPage = () => {
           with teams of diverse backgrounds.
         </p>
 
-        <p className="mb-3">
+        <p className="mb-8">
           I&apos;m looking for remote contract roles, preferrably a frontend role in web3.
-          If you're interested in working with me, you can <a href="mailto:hello@trishalim.com"
+          If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
             className="text-pink hover:underline">
             send me an email
           </a>.
         </p>
 
-        {/* <p className="mb-3">
-          I&apos;m currently living the island life at Koh Samui 🏝, Thailand.
-        </p> */}
+        <p className="mb-3">
+          📍 Koh Samui, Thailand.
+        </p>
 
         <br />
         <br />

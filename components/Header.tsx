@@ -26,7 +26,7 @@ export const Header = (): ReactElement => {
   ];
 
   return (
-    <div className="w-full bg-gray-100 sticky top-0 hidden md:block shadow bg-opacity-80" style={{
+    <div className="w-full bg-gray-100 sticky top-0 hidden md:block shadow bg-opacity-80 z-50" style={{
       backdropFilter: `saturate(180%) blur(20px)`
     }}>
       <div className="container px-5 py-4 mx-auto max-w-3xl text-center">
