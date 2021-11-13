@@ -227,7 +227,7 @@ const Home: NextPage = () => {
 
         <br />
 
-        <p>
+        <p className="mb-3">
           Hey, I&apos;m Trisha! 👋
         </p>
 
