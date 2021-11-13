@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
+import Header from '../components/Header'
 import { Project } from '../components/Project'
 import { Socials } from '../components/Socials'
 import { Experience as IExperience } from '../types/experience'
@@ -285,16 +286,23 @@ const Home: NextPage = () => {
         />
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
-    
-      <main className="container p-5 lg:p-10 mx-auto max-w-3xl">
 
-        <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row">
-          <h1 className="my-5 text-center md:text-left w-full md:w-10/12">
-            Trisha Lim
-          </h1>
-          <img className="my-5 mx-auto rounded-full w-8/12 sm:w-6/12 md:w-2/12" src="/profile.png" alt="Trisha Lim"/>
+      <Header />
+    
+      <main className="container p-5 lg:py-10 mx-auto max-w-3xl">
+
+        <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
+          <div className="my-5 text-center md:text-left w-full md:w-10/12">
+            <h1 className="font-bold">
+              Trisha Lim
+            </h1>
+            <h2 className="my-3 text-2xl">Frontend Engineer ✨</h2>
+          </div>
+          <img className="my-5 mx-auto rounded-full w-6/12 sm:w-4/12 md:w-2/12 border-pink border-4" src="/profile.png" alt="Trisha Lim"/>
         </div>
 
+        <br  id="about"/>
+        <br />
         <br />
 
         <p className="mb-3">
@@ -323,6 +331,7 @@ const Home: NextPage = () => {
 
         <Socials />
 
+        <br id="experience" />
         <br />
         <br />
         <br />
@@ -338,6 +347,8 @@ const Home: NextPage = () => {
         }
         </div>
 
+        <br id="projects" />
+        <br />
         <br />
         <br />
 
@@ -350,6 +361,7 @@ const Home: NextPage = () => {
           }
         </div>
 
+        <br id="posts"/>
         <br />
         <br />
         <br />
@@ -367,13 +379,15 @@ const Home: NextPage = () => {
         <br />
         <br />
         <br />
+        <br />
+        <br />
 
         <div style={{
           display: 'flex',
           justifyContent: 'center'
         }}>
           <Link href="mailto:hello@trishalim.com">
-            <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white">
+            <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl">
               Contact me
             </a>
           </Link>

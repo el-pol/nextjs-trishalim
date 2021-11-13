@@ -39,7 +39,7 @@ export const Socials = (): ReactElement => {
         links.map((l) => (
           <Link href={l.link} key={l.link}>
             <a href={l.link} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={l.icon} className="w-7 mr-5" />
+              <FontAwesomeIcon icon={l.icon} className="w-7 mr-5 hover:text-pink" />
             </a>
           </Link>
         ))
