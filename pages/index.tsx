@@ -320,6 +320,7 @@ const Home: NextPage = () => {
 
         <h2>I build</h2>
         <br />
+        <br />
         <div className="flex flex-wrap -m-5">
           {
             projects.map((p) => <div key={p.link} className="w-full p-5 md:w-6/12"><Project content={p} /></div>)
