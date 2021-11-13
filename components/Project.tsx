@@ -17,7 +17,7 @@ export const Project = (props: {
   return (
     <Link href={link}>
       <a href={link} target="_blank" rel="noreferrer">
-        <div className="w-full h-80 rounded mb-5 bg-top bg-cover"style={{
+        <div className="w-ful h-60 sm:h-80 md:h-60 rounded mb-5 bg-top bg-cover"style={{
             backgroundImage: `url(${imageUrl})`
           }}></div>
         <h3 className="mb-5">{title}</h3>

@@ -216,7 +216,7 @@ const Home: NextPage = () => {
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
     
-      <main className="container p-5 lg:p-10 mx-auto">
+      <main className="container p-5 lg:p-10 mx-auto max-w-3xl">
 
         <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row">
           <h1 className="my-5 text-center md:text-left w-full md:w-10/12">
