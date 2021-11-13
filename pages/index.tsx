@@ -289,7 +289,7 @@ const Home: NextPage = () => {
 
       <Header />
     
-      <main className="container p-5 lg:py-10 mx-auto max-w-4xl">
+      <main className="container p-5 lg:py-10 mx-auto max-w-3xl">
 
         <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
           <div className="my-5 text-center md:text-left w-full md:w-10/12">
