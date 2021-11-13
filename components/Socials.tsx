@@ -34,12 +34,12 @@ export const Socials = (): ReactElement => {
   ];
 
   return (
-    <div className="socials">
+    <div className="flex items-center">
       {
         links.map((l) => (
           <Link href={l.link} key={l.link}>
             <a href={l.link} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={l.icon} />
+              <FontAwesomeIcon icon={l.icon} className="w-7 mr-5" />
             </a>
           </Link>
         ))
