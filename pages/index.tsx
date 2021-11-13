@@ -294,13 +294,15 @@ const Home: NextPage = () => {
 
         <br />
         <br />
+        <br />
+        <br />
 
         <div style={{
           display: 'flex',
           justifyContent: 'center'
         }}>
           <Link href="mailto:hello@trishalim.com">
-            <a href="mailto:hello@trishalim.com" className="cta">
+            <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white">
               contact me
             </a>
           </Link>
