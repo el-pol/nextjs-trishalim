@@ -289,7 +289,7 @@ const Home: NextPage = () => {
 
       <Header />
     
-      <main className="container p-5 lg:py-10 mx-auto max-w-3xl">
+      <main className="container p-5 lg:py-10 mx-auto max-w-4xl">
 
         <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
           <div className="my-5 text-center md:text-left w-full md:w-10/12">
@@ -355,9 +355,9 @@ const Home: NextPage = () => {
         <h2>I build</h2>
         <br />
         <br />
-        <div className="flex flex-wrap -m-5">
+        <div className="flex flex-wrap -mx-6 -my-8">
           {
-            projects.map((p) => <div key={p.link} className="w-full p-5 md:w-6/12"><Project content={p} /></div>)
+            projects.map((p) => <div key={p.link} className="w-full px-6 py-8 md:w-6/12"><Project content={p} /></div>)
           }
         </div>
 
@@ -369,9 +369,9 @@ const Home: NextPage = () => {
         <h2>I talk about</h2>
         <br />
         <br />
-        <div className="flex flex-wrap -mx-3 -my-5">
+        <div className="flex flex-wrap -mx-6 -my-8">
           {
-            content.map((c) => <div key={c.link} className="w-full px-3 py-5 md:w-6/12"><Content content={c} /></div>)
+            content.map((c) => <div key={c.link} className="w-full px-6 py-8 md:w-6/12"><Content content={c} /></div>)
           }
         </div>
 
@@ -387,7 +387,8 @@ const Home: NextPage = () => {
           justifyContent: 'center'
         }}>
           <Link href="mailto:hello@trishalim.com">
-            <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl">
+            <a href="mailto:hello@trishalim.com"
+              className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors">
               Contact me
             </a>
           </Link>
