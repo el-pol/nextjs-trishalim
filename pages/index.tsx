@@ -19,7 +19,7 @@ const SKILLS: { [key: string]: Skill } = {
     name: 'Next.js'
   },
   CONTENTFUL: {
-    name: 'Contentful'
+    name: 'Contentful CMS'
   },
   ANGULAR: {
     name: 'Angular'
@@ -195,8 +195,9 @@ const Home: NextPage = () => {
       link: 'https://dancertribe.com/',
       imageUrl: '/project-dancer-tribe.png',
       description: `
-        Find dance studios worldwide including schedule, pricing, reviews and photos.
-        Studio owners can also manage their own pages.
+        I designed and developed a worldwide directory of dance studios that include
+        schedules, pricing, reviews and photos. It also allows studio owners add
+        and manage their own pages.
       `,
       skills: [
         SKILLS.ANGULAR, SKILLS.FIREBASE, SKILLS.ALGOLIA, SKILLS.UIUX, SKILLS.TYPESCRIPT,
@@ -208,7 +209,9 @@ const Home: NextPage = () => {
       link: 'https://www.educaider.co.nz/',
       imageUrl: '/project-educaider.jpg',
       description: `
-        Find the right course for you, with 800+ courses from different schools all over New Zealand.
+        Educaider contains 800+ courses in New Zealand you can search from. I worked
+        on implementing the design, adding a content-managed blog, search feature,
+        course pages and campus pages.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL, SKILLS.ALGOLIA,
@@ -222,6 +225,7 @@ const Home: NextPage = () => {
       description: `
         A content-managed marketing website and blog for Dubber -
         the world's leading provider of cloud-based call recording and voice AI.
+        I worked on creating components for the CMS including the blog pages.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
@@ -233,7 +237,8 @@ const Home: NextPage = () => {
       imageUrl: '/project-nzma.jpg',
       description: `
         NZMA offers a wide range of vocational courses in different industries
-        such as hospitality, cookery, business, plumbing, etc.
+        such as hospitality, cookery, business, plumbing, etc. I implemented
+        the designs.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
@@ -245,6 +250,7 @@ const Home: NextPage = () => {
       imageUrl: '/project-nzst.jpg',
       description: `
         A content-managed marketing website and blog for New Zealand School of Tourism.
+        I developed the CMS components needed to accomplish the design.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
@@ -255,7 +261,8 @@ const Home: NextPage = () => {
       link: 'https://apolinargroup.com',
       imageUrl: '/project-apolinar.jpeg',
       description: `
-        Apolinar is an award-winning digital team in New Zealand.
+        Apolinar is an award-winning digital team in New Zealand. I worked on
+        implementing the design of their landing page.
       `,
       skills: [
         SKILLS.HTML, SKILLS.SCSS, SKILLS.JAVASCRIPT
@@ -324,10 +331,11 @@ const Home: NextPage = () => {
         </p>
 
         <p className="mb-3">
-          I&apos;m looking for remote contract roles. You can <a href="mailto:hello@trishalim.com"
-              className="text-pink">
-              shoot me an email
-            </a> or <a className="text-pink" href="https://twitter.com/trishathecookie" target="_blank" rel="noreferrer"> DM me on Twitter</a>.
+          I&apos;m looking for remote contract roles, preferrably a frontend role in web3.
+          If you're interested in working with me, you can <a href="mailto:hello@trishalim.com"
+            className="text-pink hover:underline">
+            send me an email
+          </a>.
         </p>
 
         {/* <p className="mb-3">
@@ -360,7 +368,7 @@ const Home: NextPage = () => {
         <br />
         <br />
 
-        <h2>I build</h2>
+        <h2>Projects</h2>
         <br />
         <br />
         <div className="flex flex-wrap -mx-6 -my-8">
@@ -374,7 +382,7 @@ const Home: NextPage = () => {
         <br />
         <br />
 
-        <h2>I talk about</h2>
+        <h2>Blog</h2>
         <br />
         <br />
         <div className="flex flex-wrap -mx-6 -my-8">
@@ -388,7 +396,7 @@ const Home: NextPage = () => {
         <br />
         <br />
 
-        <h2>I tweet</h2>
+        <h2>I tweet...</h2>
         <br />
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-8/12 p-3"> 
