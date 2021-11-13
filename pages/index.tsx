@@ -271,18 +271,22 @@ const Home: NextPage = () => {
         <br />
 
         <h2>I build</h2>
-        {
-          projects.map((p) => <Project key={p.link} content={p} />)
-        }
+        <br />
+        <div className="flex flex-wrap -m-3">
+          {
+            projects.map((p) => <div className="w-full p-3 md:w-6/12"><Project key={p.link} content={p} /></div>)
+          }
+        </div>
 
         <br />
         <br />
 
         <h2>I talk about</h2>
-        <div className="content-grid">
-        {
-          content.map((c) => <Content key={c.link} content={c} />)
-        }
+        <br />
+        <div className="flex flex-wrap -m-3">
+          {
+            content.map((c) => <div className="w-full p-3 md:w-6/12"><Content key={c.link} content={c} /></div>)
+          }
         </div>
 
         <br />
