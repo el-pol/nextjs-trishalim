@@ -28,6 +28,9 @@
     @apply text-xl;
     @apply font-semibold;
   }
+  p {
+    @apply mb-3;
+  }
 }
 
 html,
