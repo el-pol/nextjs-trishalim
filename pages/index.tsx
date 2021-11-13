@@ -203,18 +203,6 @@ const Home: NextPage = () => {
       ]
     },
     {
-      title: 'Dubber',
-      link: 'https://www.dubber.net/',
-      imageUrl: '/project-dubber.png',
-      description: `
-        A content-managed marketing website for Dubber -
-        the world's leading provider of cloud-based call recording and voice AI.
-      `,
-      skills: [
-        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
-      ]
-    },
-    {
       title: 'Educaider',
       link: 'https://www.educaider.co.nz/',
       imageUrl: '/project-educaider.jpg',
@@ -224,6 +212,18 @@ const Home: NextPage = () => {
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL, SKILLS.ALGOLIA,
         SKILLS.INSTANTSEARCHJS
+      ]
+    },
+    {
+      title: 'Dubber',
+      link: 'https://www.dubber.net/',
+      imageUrl: '/project-dubber.png',
+      description: `
+        A content-managed marketing website for Dubber -
+        the world's leading provider of cloud-based call recording and voice AI.
+      `,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
       ]
     },
     {
