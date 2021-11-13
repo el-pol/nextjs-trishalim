@@ -172,7 +172,7 @@ const Home: NextPage = () => {
       link: 'https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof'
     },
     {
-      title: 'How I Became a Digital Nomad',
+      title: 'How I became a digital nomad',
       imageUrl: '/content-digital-nomad.png',
       link: 'https://www.youtube.com/watch?v=ihb6Yu3zy40'
     },
@@ -240,7 +240,7 @@ const Home: NextPage = () => {
   ];
 
   const title = `Trisha Lim - Frontend Engineer`;
-  const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
+  const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`;
 
   return (
     <div>
@@ -351,7 +351,7 @@ const Home: NextPage = () => {
         }}>
           <Link href="mailto:hello@trishalim.com">
             <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white">
-              contact me
+              Contact me
             </a>
           </Link>
         </div>
