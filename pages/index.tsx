@@ -222,7 +222,7 @@ const Home: NextPage = () => {
           <h1 className="my-5 text-center md:text-left w-full md:w-10/12">
             Trisha Lim
           </h1>
-          <img className="my-5 mx-auto rounded-full w-8/12 sm:w-6/12 md:w-2/12" src="/profile.png"/>
+          <img className="my-5 mx-auto rounded-full w-8/12 sm:w-6/12 md:w-2/12" src="/profile.png" alt="Trisha Lim"/>
         </div>
 
         <br />
@@ -275,7 +275,7 @@ const Home: NextPage = () => {
         <br />
         <div className="flex flex-wrap -m-5">
           {
-            projects.map((p) => <div className="w-full p-5 md:w-6/12"><Project key={p.link} content={p} /></div>)
+            projects.map((p) => <div key={p.link} className="w-full p-5 md:w-6/12"><Project content={p} /></div>)
           }
         </div>
 
@@ -288,7 +288,7 @@ const Home: NextPage = () => {
         <br />
         <div className="flex flex-wrap -m-5">
           {
-            content.map((c) => <div className="w-full p-5 md:w-6/12"><Content key={c.link} content={c} /></div>)
+            content.map((c) => <div key={c.link} className="w-full p-5 md:w-6/12"><Content content={c} /></div>)
           }
         </div>
 
