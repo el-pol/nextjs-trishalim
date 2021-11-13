@@ -14,12 +14,10 @@ export const Content = (props: {
 
   return (
     <Link href={link}>
-      <a href={link} target="_blank" className="content" rel="noreferrer">
-        <div className="content__image"
-          style={{
+      <a href={link} target="_blank" rel="noreferrer">
+        <div className="w-full h-80 rounded mb-5 bg-top bg-cover"style={{
             backgroundImage: `url(${imageUrl})`
-          }}
-        ></div>
+          }}></div>
         <h3>{title}</h3>
         <p>{description}</p>
       </a>

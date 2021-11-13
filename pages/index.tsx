@@ -259,6 +259,7 @@ const Home: NextPage = () => {
 
         <h2>Experience</h2>
         <br />
+        <br />
         <div>
         {
           experiences.map((e) => (
@@ -272,35 +273,25 @@ const Home: NextPage = () => {
 
         <h2>I build</h2>
         <br />
-        <div className="flex flex-wrap -m-3">
+        <div className="flex flex-wrap -m-5">
           {
-            projects.map((p) => <div className="w-full p-3 md:w-6/12"><Project key={p.link} content={p} /></div>)
+            projects.map((p) => <div className="w-full p-5 md:w-6/12"><Project key={p.link} content={p} /></div>)
           }
         </div>
 
+        <br />
         <br />
         <br />
 
         <h2>I talk about</h2>
         <br />
-        <div className="flex flex-wrap -m-3">
+        <br />
+        <div className="flex flex-wrap -m-5">
           {
-            content.map((c) => <div className="w-full p-3 md:w-6/12"><Content key={c.link} content={c} /></div>)
+            content.map((c) => <div className="w-full p-5 md:w-6/12"><Content key={c.link} content={c} /></div>)
           }
         </div>
 
-        <br />
-        <br />
-
-        {/* <h2>I do my best work when</h2>
-        <ul className="emoji-list">
-          <li><span>🍵</span> I&apos;ve had my matcha latte.</li>
-          <li><span>👩🏽‍💻</span> I have set focused hours with no calls. I prefer to batch tasks like calls and code reviews.</li>
-          <li><span>🎨</span> I have enough time and energy left in the day to work on my own stuff and be creative.</li>
-        </ul>
-
-        <br />
-        <br /> */}
         <br />
         <br />
 
