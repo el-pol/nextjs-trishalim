@@ -219,8 +219,20 @@ const Home: NextPage = () => {
       link: 'https://www.dubber.net/',
       imageUrl: '/project-dubber.png',
       description: `
-        A content-managed marketing website for Dubber -
+        A content-managed marketing website and blog for Dubber -
         the world's leading provider of cloud-based call recording and voice AI.
+      `,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
+      ]
+    },
+    {
+      title: 'New Zealand Management Academies (NZMA)',
+      link: 'https://www.nzma.ac.nz/',
+      imageUrl: '/project-nzma.jpg',
+      description: `
+        NZMA offers a wide range of vocational courses in different industries
+        such as hospitality, cookery, business, plumbing, etc.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
@@ -231,12 +243,23 @@ const Home: NextPage = () => {
       link: 'https://www2.nzschooloftourism.co.nz/',
       imageUrl: '/project-nzst.jpg',
       description: `
-        A content-managed marketing website for New Zealand School of Tourism.
+        A content-managed marketing website and blog for New Zealand School of Tourism.
       `,
       skills: [
         SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
       ]
-    }
+    },
+    {
+      title: 'Apolinar',
+      link: 'https://apolinargroup.com',
+      imageUrl: '/project-apolinar.jpeg',
+      description: `
+        Apolinar is an award-winning digital team in New Zealand.
+      `,
+      skills: [
+        SKILLS.HTML, SKILLS.SCSS, SKILLS.JAVASCRIPT
+      ]
+    },
   ];
 
   const title = `Trisha Lim - Frontend Engineer`;
