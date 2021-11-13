@@ -6,7 +6,6 @@ import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import { Project } from '../components/Project'
 import { Socials } from '../components/Socials'
-import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
 import { Project as IProject } from '../types/project'
 import { Skill } from '../types/skill'
@@ -197,7 +196,7 @@ const Home: NextPage = () => {
   const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -217,7 +216,7 @@ const Home: NextPage = () => {
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
     
-      <main className={styles.main}>
+      <main>
 
         <div className="headline">
           <h1>
