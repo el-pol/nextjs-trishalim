@@ -285,6 +285,7 @@ const Home: NextPage = () => {
           content={description}
         />
         <meta property="og:image" content="/fb-social-share.jpg" />
+        <script async src="https://platform.twitter.com/widgets.js"></script>
       </Head>
 
       <Header />
@@ -373,6 +374,29 @@ const Home: NextPage = () => {
           {
             content.map((c) => <div key={c.link} className="w-full px-6 py-8 md:w-6/12"><Content content={c} /></div>)
           }
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <h2>I tweet</h2>
+        <br />
+        <div className="flex flex-wrap -m-3">
+          <div className="w-full md:w-8/12 p-3">
+            
+          <blockquote className="twitter-tweet"><p lang="en" dir="ltr">The first tutorial I ever wrote made it to <a href="https://twitter.com/ThePracticalDev?ref_src=twsrc%5Etfw">@ThePracticalDev</a>&#39;s &quot;Top 7 Featured DEV Posts from the Past Week&quot;!<br/><br/>I&#39;m SO HAPPY. Thank you so much 👉👈<a href="https://t.co/noSfV7OWoR">https://t.co/noSfV7OWoR</a></p>&mdash; trishalim.eth (@trishathecookie) <a href="https://twitter.com/trishathecookie/status/1443067957400125445?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
+          </div>
+          
+          <div className="w-full md:w-8/12 p-3">
+            
+          <blockquote className="twitter-tweet"><p lang="en" dir="ltr">Starting a new project today that I&#39;m excited about! The work is pretty simple, but I love making cool designs come to life. 😊</p>&mdash; trishalim.eth (@trishathecookie) <a href="https://twitter.com/trishathecookie/status/1455731771241234439?ref_src=twsrc%5Etfw">November 3, 2021</a></blockquote>
+          </div>
+          <div className="w-full md:w-8/12 p-3">
+            
+          <blockquote className="twitter-tweet"><p lang="en" dir="ltr">It’s the weekend. Do I want to learn Tailwind or do I want to start a blog? 🤷‍♀️</p>&mdash; trishalim.eth (@trishathecookie) <a href="https://twitter.com/trishathecookie/status/1446637531341021185?ref_src=twsrc%5Etfw">October 9, 2021</a></blockquote> 
+          </div>
+          
         </div>
 
         <br />
