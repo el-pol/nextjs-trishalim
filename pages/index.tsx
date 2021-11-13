@@ -6,7 +6,6 @@ import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import { Project } from '../components/Project'
 import { Socials } from '../components/Socials'
-import styles from '../styles/Home.module.css'
 import { Experience as IExperience } from '../types/experience'
 import { Project as IProject } from '../types/project'
 import { Skill } from '../types/skill'
@@ -197,7 +196,7 @@ const Home: NextPage = () => {
   const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, Angular, TypeScript.`;
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -217,13 +216,13 @@ const Home: NextPage = () => {
         <meta property="og:image" content="/fb-social-share.jpg" />
       </Head>
     
-      <main className={styles.main}>
+      <main className="container p-5 lg:p-10 mx-auto max-w-3xl">
 
-        <div className="headline">
-          <h1>
+        <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row">
+          <h1 className="my-5 text-center md:text-left w-full md:w-10/12">
             Trisha Lim
           </h1>
-          <img className="profile-image" src="/profile.png"/>
+          <img className="my-5 mx-auto rounded-full w-8/12 sm:w-6/12 md:w-2/12" src="/profile.png" alt="Trisha Lim"/>
         </div>
 
         <br />
@@ -232,20 +231,20 @@ const Home: NextPage = () => {
           Hey, I&apos;m Trisha! 👋
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;m a Frontend Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
           I&apos;m dedicated to delivering great user experiences by working closely with
           designers, and writing good quality code to maintain a good developer experience.
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;ve worked on large B2B apps and content-managed websites for clients in the US,
           New Zealand and Australia. I&apos;m a seasoned remote worker capable of working across timezones
           with teams of diverse backgrounds.
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;m currently living the island life at Koh Samui 🏝, Thailand.
         </p>
 
@@ -256,8 +255,11 @@ const Home: NextPage = () => {
 
         <br />
         <br />
+        <br />
 
         <h2>Experience</h2>
+        <br />
+        <br />
         <div>
         {
           experiences.map((e) => (
@@ -270,32 +272,28 @@ const Home: NextPage = () => {
         <br />
 
         <h2>I build</h2>
-        {
-          projects.map((p) => <Project key={p.link} content={p} />)
-        }
-
         <br />
-        <br />
-
-        <h2>I talk about</h2>
-        <div className="content-grid">
-        {
-          content.map((c) => <Content key={c.link} content={c} />)
-        }
+        <div className="flex flex-wrap -m-5">
+          {
+            projects.map((p) => <div key={p.link} className="w-full p-5 md:w-6/12"><Project content={p} /></div>)
+          }
         </div>
 
         <br />
         <br />
+        <br />
 
-        {/* <h2>I do my best work when</h2>
-        <ul className="emoji-list">
-          <li><span>🍵</span> I&apos;ve had my matcha latte.</li>
-          <li><span>👩🏽‍💻</span> I have set focused hours with no calls. I prefer to batch tasks like calls and code reviews.</li>
-          <li><span>🎨</span> I have enough time and energy left in the day to work on my own stuff and be creative.</li>
-        </ul>
+        <h2>I talk about</h2>
+        <br />
+        <br />
+        <div className="flex flex-wrap -m-5">
+          {
+            content.map((c) => <div key={c.link} className="w-full p-5 md:w-6/12"><Content content={c} /></div>)
+          }
+        </div>
 
         <br />
-        <br /> */}
+        <br />
         <br />
         <br />
 
@@ -304,7 +302,7 @@ const Home: NextPage = () => {
           justifyContent: 'center'
         }}>
           <Link href="mailto:hello@trishalim.com">
-            <a href="mailto:hello@trishalim.com" className="cta">
+            <a href="mailto:hello@trishalim.com" className="px-10 py-4 text-xl bg-black text-white">
               contact me
             </a>
           </Link>
