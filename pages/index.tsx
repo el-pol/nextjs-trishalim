@@ -231,20 +231,20 @@ const Home: NextPage = () => {
           Hey, I&apos;m Trisha! 👋
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;m a Frontend Engineer specializing in React + Next.js + TypeScript with
           5 years experience building single page applications.
           I&apos;m dedicated to delivering great user experiences by working closely with
           designers, and writing good quality code to maintain a good developer experience.
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;ve worked on large B2B apps and content-managed websites for clients in the US,
           New Zealand and Australia. I&apos;m a seasoned remote worker capable of working across timezones
           with teams of diverse backgrounds.
         </p>
 
-        <p>
+        <p className="mb-3">
           I&apos;m currently living the island life at Koh Samui 🏝, Thailand.
         </p>
 
@@ -255,8 +255,10 @@ const Home: NextPage = () => {
 
         <br />
         <br />
+        <br />
 
         <h2>Experience</h2>
+        <br />
         <div>
         {
           experiences.map((e) => (

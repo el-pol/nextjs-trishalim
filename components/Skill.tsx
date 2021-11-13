@@ -9,7 +9,7 @@ export const Skill = (props: {
   } = props.content;
 
   return (
-    <span className="skill">
+    <span className="bg-gray-200 py-1 px-2 mb-3 mr-3 text-xs text-gray-500 rounded">
       {name}
     </span>
   )
