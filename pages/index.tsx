@@ -73,6 +73,9 @@ const SKILLS: { [key: string]: Skill } = {
   },
   UIUX: {
     name: 'UI/UX Design',
+  },
+  INSTANTSEARCHJS: {
+    name: 'InstantSearch.js'
   }
 };
 
@@ -172,6 +175,16 @@ const Home: NextPage = () => {
       title: 'How I Became a Digital Nomad',
       imageUrl: '/content-digital-nomad.png',
       link: 'https://www.youtube.com/watch?v=ihb6Yu3zy40'
+    },
+    {
+      title: `Best Investments I've Made Before 25`,
+      imageUrl: 'https://images.unsplash.com/photo-1616077168639-f770d830e3d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzNXx8c3RvY2tzfGVufDB8fHx8MTYzMzc2NzI0OQ&ixlib=rb-1.2.1&q=80&w=800',
+      link: 'https://trisha-lim.ghost.io/best-investments-ive-made-before-25/',
+    },
+    {
+      title: 'Magical Sakura Days in Japan',
+      imageUrl: 'https://trisha-lim.ghost.io/content/images/size/w800/2021/10/DSC3989-1.jpeg',
+      link: 'https://trisha-lim.ghost.io/magical-sakura-days-in-kyoto-japan/'
     }
   ];
 
@@ -181,13 +194,47 @@ const Home: NextPage = () => {
       link: 'https://dancertribe.com/',
       imageUrl: '/project-dancer-tribe.png',
       description: `
-        Dancer Tribe helps dancers find dance studios worldwide
-        including their schedule, pricing, reviews and photos.
+        Find dance studios worldwide including schedule, pricing, reviews and photos.
         Studio owners can also manage their own pages.
       `,
       skills: [
         SKILLS.ANGULAR, SKILLS.FIREBASE, SKILLS.ALGOLIA, SKILLS.UIUX, SKILLS.TYPESCRIPT,
         SKILLS.SCSS
+      ]
+    },
+    {
+      title: 'Dubber',
+      link: 'https://www.dubber.net/',
+      imageUrl: '/project-dubber.png',
+      description: `
+        A content-managed marketing website for Dubber -
+        the world's leading provider of cloud-based call recording and voice AI.
+      `,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
+      ]
+    },
+    {
+      title: 'Educaider',
+      link: 'https://www.educaider.co.nz/',
+      imageUrl: '/project-educaider.jpg',
+      description: `
+        Find the right course for you, with 800+ courses from different schools all over New Zealand.
+      `,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL, SKILLS.ALGOLIA,
+        SKILLS.INSTANTSEARCHJS
+      ]
+    },
+    {
+      title: 'New Zealand School of Tourism',
+      link: 'https://www2.nzschooloftourism.co.nz/',
+      imageUrl: '/project-nzst.jpg',
+      description: `
+        A content-managed marketing website for New Zealand School of Tourism.
+      `,
+      skills: [
+        SKILLS.REACT, SKILLS.NEXT, SKILLS.TYPESCRIPT, SKILLS.CONTENTFUL,
       ]
     }
   ];
@@ -286,9 +333,9 @@ const Home: NextPage = () => {
         <h2>I talk about</h2>
         <br />
         <br />
-        <div className="flex flex-wrap -m-5">
+        <div className="flex flex-wrap -mx-3 -my-5">
           {
-            content.map((c) => <div key={c.link} className="w-full p-5 md:w-6/12"><Content content={c} /></div>)
+            content.map((c) => <div key={c.link} className="w-full px-3 py-5 md:w-6/12"><Content content={c} /></div>)
           }
         </div>
 
