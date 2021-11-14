@@ -336,9 +336,9 @@ const Home: NextPage = () => {
         <p className="mb-8">
           I also publish articles about tech and life. I recently wrote about <a
           href="https://dev.to/trishathecookie/css-tricks-to-create-that-dark-futuristic-web3-look-53bm"
-          target="_blank" className="text-pink underline hover:no-underline font-semibold">CSS in Web3</a> and <a
+          target="_blank" className="text-pink underline hover:no-underline font-semibold" rel="noreferrer">CSS in Web3</a> and <a
           href="https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof"
-          target="_blank" className="text-pink underline hover:no-underline font-semibold">
+          target="_blank" className="text-pink underline hover:no-underline font-semibold" rel="noreferrer">
             learning React Context
           </a>. If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
           className="text-pink underline hover:no-underline font-semibold">
