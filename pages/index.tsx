@@ -322,7 +322,7 @@ const Home: NextPage = () => {
 
         <p className="mb-3">
           I&apos;m a Frontend Engineer specializing in React + Next.js + TypeScript with
-          5 years experience building single page applications.
+          5+ years experience building single page applications.
           I&apos;m dedicated to delivering great user experiences by working closely with
           designers, and writing good quality code to maintain a good developer experience.
         </p>
@@ -334,10 +334,15 @@ const Home: NextPage = () => {
         </p>
 
         <p className="mb-8">
-          I&apos;m looking for remote contract roles, preferrably a frontend role in web3.
-          If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
-            className="text-pink underline hover:no-underline font-semibold">
-            send me an email
+          I also publish articles about tech and life. I recently wrote about <a
+          href="https://dev.to/trishathecookie/css-tricks-to-create-that-dark-futuristic-web3-look-53bm"
+          target="_blank" className="text-pink underline hover:no-underline font-semibold">CSS in Web3</a> and <a
+          href="https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof"
+          target="_blank" className="text-pink underline hover:no-underline font-semibold">
+            learning React Context
+          </a>. If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
+          className="text-pink underline hover:no-underline font-semibold">
+          send me an email
           </a>.
         </p>
 
