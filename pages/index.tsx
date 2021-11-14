@@ -331,7 +331,7 @@ const Home: NextPage = () => {
         <p className="mb-8">
           I&apos;m looking for remote contract roles, preferrably a frontend role in web3.
           If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
-            className="text-pink hover:underline">
+            className="text-pink underline hover:no-underline font-semibold">
             send me an email
           </a>.
         </p>
