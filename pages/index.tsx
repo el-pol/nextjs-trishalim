@@ -309,9 +309,7 @@ const Home: NextPage = () => {
           <img className="my-5 mx-auto rounded-full w-6/12 sm:w-4/12 md:w-2/12 border-pink border-4" src="/profile.png" alt="Trisha Lim"/>
         </div>
 
-        <br  id="about"/>
-        <br />
-        <br />
+        <span id="about" className="block mb-8" />
 
         <p className="mb-3">
           Hey, I&apos;m Trisha! 👋
@@ -338,23 +336,15 @@ const Home: NextPage = () => {
           </a>.
         </p>
 
-        <p className="mb-3">
+        <p className="mb-12">
           📍 Koh Samui, Thailand.
         </p>
 
-        <br />
-        <br />
-
         <Socials />
 
-        <br id="experience" />
-        <br />
-        <br />
-        <br />
+        <span id="experience" className="block pb-20" />
 
-        <h2>Experience</h2>
-        <br />
-        <br />
+        <h2 className="mb-8">Experience</h2>
         <div>
         {
           experiences.map((e) => (
@@ -363,41 +353,25 @@ const Home: NextPage = () => {
         }
         </div>
 
-        <br id="projects" />
-        <br />
-        <br />
-        <br />
+        <span id="projects" className="block pb-16" />
 
-        <h2>Projects</h2>
-        <br />
-        <br />
+        <h2 className="mb-8">Projects</h2>
         <div className="flex flex-wrap -mx-6 -my-8">
           {
             projects.map((p) => <div key={p.link} className="w-full px-6 py-8 md:w-6/12"><Project content={p} /></div>)
           }
         </div>
 
-        <br id="posts"/>
-        <br />
-        <br />
-        <br />
+        <span id="posts" className="block pb-20" />
 
-        <h2>Blog</h2>
-        <br />
-        <br />
+        <h2 className="mb-8">Blog</h2>
         <div className="flex flex-wrap -mx-6 -my-8">
           {
             content.map((c) => <div key={c.link} className="w-full px-6 py-8 md:w-6/12"><Content content={c} /></div>)
           }
         </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <h2>I tweet...</h2>
-        <br />
+        <h2 className="mt-16 mb-8">I tweet...</h2>
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-8/12 p-3"> 
             <blockquote className="twitter-tweet"><p lang="en" dir="ltr">The first tutorial I ever wrote made it to <a href="https://twitter.com/ThePracticalDev?ref_src=twsrc%5Etfw">@ThePracticalDev</a>&#39;s &quot;Top 7 Featured DEV Posts from the Past Week&quot;!<br/><br/>I&#39;m SO HAPPY. Thank you so much 👉👈<a href="https://t.co/noSfV7OWoR">https://t.co/noSfV7OWoR</a></p>&mdash; trishalim.eth (@trishathecookie) <a href="https://twitter.com/trishathecookie/status/1443067957400125445?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
@@ -411,20 +385,13 @@ const Home: NextPage = () => {
           </div> */}
         </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div style={{
           display: 'flex',
           justifyContent: 'center'
         }}>
           <Link href="mailto:hello@trishalim.com">
             <a href="mailto:hello@trishalim.com"
-              className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors">
+              className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors my-20">
               Contact me
             </a>
           </Link>

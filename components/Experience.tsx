@@ -23,13 +23,12 @@ export const Experience = (props: {
           <h3 className="text-xl mr-5">
             <Link href={link}>
               <a href={link} target="_blank" rel="nofollow noreferrer">
-                {company}
+                {position} at {company}
               </a>
             </Link>
           </h3>
-          <p className="text-xl">{position}</p>
         </div>
-        <p className="uppercase text-gray-500 text-sm my-2">{dateStart} - {dateEnd}</p>
+        <p className="text-gray-500 text-sm my-2">{dateStart} - {dateEnd}</p>
       </div>
       <p className="my-5">
         {description}
