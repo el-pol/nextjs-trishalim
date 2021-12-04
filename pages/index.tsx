@@ -178,11 +178,6 @@ const Home: NextPage = () => {
       link: 'https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof'
     },
     {
-      title: 'How I became a digital nomad',
-      imageUrl: '/content-digital-nomad.png',
-      link: 'https://www.youtube.com/watch?v=ihb6Yu3zy40'
-    },
-    {
       title: `Best Investments I've Made Before 25`,
       imageUrl: 'https://images.unsplash.com/photo-1616077168639-f770d830e3d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzNXx8c3RvY2tzfGVufDB8fHx8MTYzMzc2NzI0OQ&ixlib=rb-1.2.1&q=80&w=800',
       link: 'https://trisha-lim.ghost.io/best-investments-ive-made-before-25/',
