@@ -26,9 +26,9 @@ export default function ExperiencePage() {
                                     </div>
                                     <p className="text-gray-500 text-sm my-2">{e.dateStart} - {e.dateEnd}</p>
                                 </div>
-                                <p className="my-5">
+                                <div className="my-5">
                                     {e.description}
-                                </p>
+                                </div>
                                 <div>
                                     <div className="mt-5 flex flex-wrap">
                                         {
