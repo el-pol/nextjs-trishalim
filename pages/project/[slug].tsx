@@ -29,7 +29,7 @@ export default function ProjectPage(props: ProjectPageProps) {
             <main>
                 <div className='max-w-2xl px-3 mx-auto my-16'>
                     <div className='flex justify-between items-center mb-8'>
-                        <h1 className="text-lg md:text-3xl">{title}</h1>
+                        <h1 className="text-2xl md:text-3xl w-full md:w-8/12">{title}</h1>
                         <span className='hidden md:flex'>
                             {button}
                         </span>
