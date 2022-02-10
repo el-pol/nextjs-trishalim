@@ -11,14 +11,13 @@ export const Project = (props: {
   const {
     imageUrl,
     title,
-    link,
-    description,
-    skills,
+    slug,
+    snippet
   } = props.content;
 
   return (
-    <Link href={link}>
-      <a href={link} target="_blank" rel="noreferrer">
+    <Link href={`/project/${slug}`} passHref>
+      <a>
         <div className="w-ful h-60 sm:h-80 md:h-60 rounded mb-5 bg-center bg-cover"style={{
             backgroundImage: `url(${imageUrl})`
           }}>
@@ -26,14 +25,8 @@ export const Project = (props: {
             <FontAwesomeIcon icon={faExternalLinkAlt} className="text-white w-10 h-10" />
           </div>
         </div>
-        <h3 className="mb-5 text-xl">{title}</h3>
-        {
-          skills &&
-          <div className="flex flex-wrap mb-2">
-            {skills.map((s) => <Skill key={s.name} content={s} />)}
-          </div>
-        }
-        <p>{description}</p>
+        <h3 className="mb-2 text-xl">{title}</h3>
+        <p>{snippet}</p>
       </a>
     </Link>
   )

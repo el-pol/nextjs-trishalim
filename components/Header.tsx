@@ -4,6 +4,10 @@ import React, { ReactElement } from "react";
 export const Header = (): ReactElement => {
   const links = [
     {
+      title: 'Home',
+      url: '/',
+    },
+    {
       title: 'About',
       url: '/#about',
     },
