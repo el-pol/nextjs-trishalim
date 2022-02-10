@@ -23,8 +23,8 @@ export const experiences: Array<Experience> = [
             </p>
         </>,
         skills: [
-            skills.REACT, skills.NEXT, skills.CONTENTFUL, skills.ANGULAR, skills.SCSS, skills.LESS,
-            skills.TYPESCRIPT, skills.BOOTSTRAP, skills.ALGOLIA, skills.REDUX
+            skills.react, skills.next, skills.contentful, skills.angular, skills.scss, skills.less,
+            skills.typescript, skills.bootstrap, skills.algolia, skills.redux
         ],
         projects: [
             projects.educaider, projects.dubber, projects.nzma, projects.nzst, projects.apolinar
@@ -44,7 +44,7 @@ export const experiences: Array<Experience> = [
             using Angular with a team of 30+ devs and led tasking of user stories.
         </p>,
         skills: [
-            skills.ANGULAR, skills.JAVASCRIPT, skills.TYPESCRIPT, skills.GIT, skills.SCRUM
+            skills.angular, skills.javascript, skills.typescript, skills.git, skills.scrum
         ]
     },
     {
@@ -60,7 +60,7 @@ export const experiences: Array<Experience> = [
             for users to resize and format various elements in the form.
         </p>,
         skills: [
-            skills.ANGULAR, skills.UIUX, skills.JAVASCRIPT, skills.TYPESCRIPT, skills.SPRING, skills.JAVA
+            skills.angular, skills.ux, skills.javascript, skills.typescript, skills.spring, skills.java
         ]
     },
     {
@@ -74,7 +74,7 @@ export const experiences: Array<Experience> = [
             I developed UI for printers using C++ in a Linux environment.
         </p>,
         skills: [
-            skills.CPP, skills.GIT, skills.SCRUM
+            skills.cpp, skills.git, skills.scrum
         ]
     },
     {
@@ -90,7 +90,7 @@ export const experiences: Array<Experience> = [
             using said technologies.
         </p>,
         skills: [
-            skills.REACT, skills.MYSQL, skills.SPRING, skills.JAVA
+            skills.react, skills.mysql, skills.spring, skills.java
         ]
     }
 ];

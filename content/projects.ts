@@ -14,8 +14,8 @@ export const projects: { [key: string]: Project } = {
       `,
         snippet: 'A directory of dance studios',
         skills: [
-            skills.ANGULAR, skills.FIREBASE, skills.ALGOLIA, skills.UIUX, skills.TYPESCRIPT,
-            skills.SCSS
+            skills.angular, skills.firebase, skills.algolia, skills.uiux, skills.typescript,
+            skills.scss
         ],
     },
     'educaider': {
@@ -30,8 +30,8 @@ export const projects: { [key: string]: Project } = {
       `,
         snippet: 'Explore 800+ courses in New Zealand',
         skills: [
-            skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL, skills.ALGOLIA,
-            skills.INSTANTSEARCHJS
+            skills.react, skills.next, skills.typescript, skills.contentful, skills.algolia,
+            skills.instantsearchjs
         ]
     },
     'dubber': {
@@ -46,7 +46,7 @@ export const projects: { [key: string]: Project } = {
       `,
         snippet: `Marketing website for the world's leading provider of cloud-based call recording and voice AI`,
         skills: [
-            skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
+            skills.react, skills.next, skills.typescript, skills.contentful,
         ]
     },
     'nzma': {
@@ -61,7 +61,7 @@ export const projects: { [key: string]: Project } = {
         the designs.
       `,
         skills: [
-            skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
+            skills.react, skills.next, skills.typescript, skills.contentful,
         ]
     },
     'nzst': {
@@ -75,7 +75,7 @@ export const projects: { [key: string]: Project } = {
         I developed the CMS components needed to accomplish the design.
       `,
         skills: [
-            skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
+            skills.react, skills.next, skills.typescript, skills.contentful,
         ]
     },
     'apolinar': {
@@ -89,7 +89,7 @@ export const projects: { [key: string]: Project } = {
         implementing the design of their landing page.
       `,
         skills: [
-            skills.HTML, skills.SCSS, skills.JAVASCRIPT
+            skills.html, skills.scss, skills.javascript
         ]
     },
 }

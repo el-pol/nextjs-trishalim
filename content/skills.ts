@@ -1,70 +1,70 @@
 import { Skill } from "../types/skill";
 
 export const skills: { [key: string]: Skill } = {
-    REACT: {
+    react: {
         name: 'React'
     },
-    NEXT: {
+    next: {
         name: 'Next.js'
     },
-    CONTENTFUL: {
+    contentful: {
         name: 'Contentful CMS'
     },
-    ANGULAR: {
+    angular: {
         name: 'Angular'
     },
-    HTML: {
+    html: {
         name: 'HTML'
     },
-    CSS: {
+    css: {
         name: 'CSS'
     },
-    JAVASCRIPT: {
+    javascript: {
         name: 'JavaScript'
     },
-    TYPESCRIPT: {
+    typescript: {
         name: 'TypeScript'
     },
-    SCSS: {
+    scss: {
         name: 'SCSS'
     },
-    LESS: {
+    less: {
         name: 'LESS'
     },
-    GIT: {
+    git: {
         name: 'Git'
     },
-    FIREBASE: {
+    firebase: {
         name: 'Firebase'
     },
-    MYSQL: {
+    mysql: {
         name: 'MySQL'
     },
-    ALGOLIA: {
+    algolia: {
         name: 'Algolia'
     },
-    BOOTSTRAP: {
+    bootstrap: {
         name: 'Bootstrap'
     },
-    SPRING: {
+    spring: {
         name: 'Spring'
     },
-    JAVA: {
+    java: {
         name: 'Java'
     },
-    REDUX: {
+    redux: {
         name: 'Redux'
     },
-    CPP: {
+    cpp: {
         name: 'C++'
     },
-    SCRUM: {
+    scrum: {
         name: 'Scrum'
     },
-    UIUX: {
+    ux: {
         name: 'UI/UX Design',
     },
-    INSTANTSEARCHJS: {
+    instantsearchjs: {
         name: 'InstantSearch.js'
     }
 };
