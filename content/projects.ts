@@ -6,6 +6,7 @@ export const projects: Array<Project> = [
         title: 'Dancer Tribe',
         link: 'https://dancertribe.com/',
         imageUrl: '/project-dancer-tribe.png',
+        slug: 'dancer-tribe',
         description: `
         I designed and developed a worldwide directory of dance studios that include
         schedules, pricing, reviews and photos. It also allows studio owners add
@@ -20,6 +21,7 @@ export const projects: Array<Project> = [
         title: 'Educaider',
         link: 'https://www.educaider.co.nz/',
         imageUrl: '/project-educaider.jpg',
+        slug: 'educaider',
         description: `
         Educaider contains 800+ courses in New Zealand you can search from. I worked
         on implementing the design, adding a content-managed blog, search feature,
@@ -34,6 +36,7 @@ export const projects: Array<Project> = [
         title: 'Dubber',
         link: 'https://www.dubber.net/',
         imageUrl: '/project-dubber.png',
+        slug: 'dubber',
         description: `
         A content-managed marketing website and blog for Dubber -
         the world's leading provider of cloud-based call recording and voice AI.
@@ -47,6 +50,7 @@ export const projects: Array<Project> = [
         title: 'New Zealand Management Academies (NZMA)',
         link: 'https://www.nzma.ac.nz/',
         imageUrl: '/project-nzma.jpg',
+        slug: 'nzma',
         description: `
         NZMA offers a wide range of vocational courses in different industries
         such as hospitality, cookery, business, plumbing, etc. I implemented
@@ -60,6 +64,7 @@ export const projects: Array<Project> = [
         title: 'New Zealand School of Tourism',
         link: 'https://www2.nzschooloftourism.co.nz/',
         imageUrl: '/project-nzst.jpg',
+        slug: 'nzst',
         description: `
         A content-managed marketing website and blog for New Zealand School of Tourism.
         I developed the CMS components needed to accomplish the design.
@@ -72,6 +77,7 @@ export const projects: Array<Project> = [
         title: 'Apolinar',
         link: 'https://apolinargroup.com',
         imageUrl: '/project-apolinar.jpeg',
+        slug: 'apolinar',
         description: `
         Apolinar is an award-winning digital team in New Zealand. I worked on
         implementing the design of their landing page.

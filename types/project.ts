@@ -6,4 +6,5 @@ export interface Project {
   imageUrl: string;
   description: string;
   skills?: Array<Skill>;
+  slug: string;
 }
