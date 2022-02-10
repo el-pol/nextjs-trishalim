@@ -1,8 +1,8 @@
 import { Project } from "../types/project";
 import { skills } from "./skills";
 
-export const projects: Array<Project> = [
-    {
+export const projects: { [key: string]: Project } = {
+    'dancer-tribe': {
         title: 'Dancer Tribe',
         link: 'https://dancertribe.com/',
         imageUrl: '/project-dancer-tribe.png',
@@ -18,7 +18,7 @@ export const projects: Array<Project> = [
             skills.SCSS
         ]
     },
-    {
+    'educaider': {
         title: 'Educaider',
         link: 'https://www.educaider.co.nz/',
         imageUrl: '/project-educaider.jpg',
@@ -34,7 +34,7 @@ export const projects: Array<Project> = [
             skills.INSTANTSEARCHJS
         ]
     },
-    {
+    'dubber': {
         title: 'Dubber',
         link: 'https://www.dubber.net/',
         imageUrl: '/project-dubber.png',
@@ -49,7 +49,7 @@ export const projects: Array<Project> = [
             skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
         ]
     },
-    {
+    'nzma': {
         title: 'New Zealand Management Academies (NZMA)',
         link: 'https://www.nzma.ac.nz/',
         imageUrl: '/project-nzma.jpg',
@@ -64,7 +64,7 @@ export const projects: Array<Project> = [
             skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
         ]
     },
-    {
+    'nzst': {
         title: 'New Zealand School of Tourism',
         link: 'https://www2.nzschooloftourism.co.nz/',
         imageUrl: '/project-nzst.jpg',
@@ -78,7 +78,7 @@ export const projects: Array<Project> = [
             skills.REACT, skills.NEXT, skills.TYPESCRIPT, skills.CONTENTFUL,
         ]
     },
-    {
+    'apolinar': {
         title: 'Apolinar',
         link: 'https://apolinargroup.com',
         imageUrl: '/project-apolinar.jpeg',
@@ -92,4 +92,4 @@ export const projects: Array<Project> = [
             skills.HTML, skills.SCSS, skills.JAVASCRIPT
         ]
     },
-];
+}

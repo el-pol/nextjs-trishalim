@@ -13,7 +13,7 @@ export const Header = (): ReactElement => {
     },
     {
       title: 'Experience',
-      url: '/#experience',
+      url: '/experience',
     },
     {
       title: 'Projects',

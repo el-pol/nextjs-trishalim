@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import { Content } from '../components/Content'
-import { Experience } from '../components/Experience'
+import Experience from '../components/Experience'
 import Header from '../components/Header'
 import { Project } from '../components/Project'
 import SiteLayout from '../components/SiteLayout'
@@ -80,6 +80,17 @@ const Home: NextPage = () => {
             <Experience content={e} key={e.company} />
           ))
         }
+
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <Link href='/experience' passHref>
+              <a className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors my-5">
+                Read more
+              </a>
+            </Link>
+          </div>
         </div>
 
         <span id="projects" className="block pb-16" />
@@ -87,7 +98,7 @@ const Home: NextPage = () => {
         <h2 className="mb-8">Projects</h2>
         <div className="flex flex-wrap -mx-6 -my-8">
           {
-            projects.map((p) => <div key={p.link} className="w-full px-6 py-8 md:w-6/12"><Project content={p} /></div>)
+            Object.keys(projects).map((key) => <div key={projects[key].link} className="w-full px-6 py-8 md:w-6/12"><Project content={projects[key]} /></div>)
           }
         </div>
 

@@ -37,7 +37,7 @@ export default function ProjectPage(props: ProjectPageProps) {
 // @ts-ignore
 export function getServerSideProps({ query }) {
     const { slug } = query
-    const project = projects.find((p) => p.slug === slug)
+    const project = projects[slug]
 
     if (!project) {
         return {
