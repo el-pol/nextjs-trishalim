@@ -7,9 +7,10 @@
     <list default="true" id="fc109cc1-f9ce-4af2-8b23-7505e764c7d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Project.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content/projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/project.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/project.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/experience.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
       <workItem from="1644416748148" duration="379000" />
       <workItem from="1644417138846" duration="1063000" />
       <workItem from="1644480028900" duration="1774000" />
+      <workItem from="1644489630856" duration="1511000" />
     </task>
     <servers />
   </component>

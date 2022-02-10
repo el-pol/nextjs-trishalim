@@ -8,8 +8,8 @@ import { Project } from "../components/Project";
 export default function ExperiencePage() {
     return (
         <SiteLayout>
-            <main className='max-w-2xl py-20 mx-auto'>
-                <h1 className='text-3xl mb-12'>Work Experience</h1>
+            <main className='md:max-w-2xl px-3 py-16 mx-auto'>
+                <h1 className='text-3xl mb-10'>Work Experience</h1>
                 <div>
                     {
                         experiences.map((e) => (
@@ -40,10 +40,10 @@ export default function ExperiencePage() {
                                 {e.projects?.length && (
                                     <>
                                         <h2 className='text-gray-500 text-sm font-normal my-5'>Projects</h2>
-                                        <div className="flex flex-wrap -mx-6 -my-8">
+                                        <div className="grid md:grid-cols-2 gap-8">
                                             {
                                                 e.projects.map((p) => (
-                                                    <div key={p.link} className="w-full px-6 py-8 md:w-6/12"><Project content={p} /></div>
+                                                    <div key={p.link}><Project content={p} /></div>
                                                 ))
                                             }
                                         </div>
