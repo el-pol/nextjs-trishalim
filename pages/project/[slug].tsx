@@ -50,9 +50,9 @@ export default function ProjectPage(props: ProjectPageProps) {
                     <div className='max-w-7xl px-3 mx-auto'>
                         <h2 className='text-lg md:text-3xl mb-12 text-center'>Other Projects</h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 md:gap-8">
-                            {Object.keys(projects).map((key, index) => {
+                            {Object.keys(projects).filter((key) => key !== slug).map((key, index) => {
                                 const project = projects[key]
-                                if (project.slug !== slug && index < 5) {
+                                if (index < 4) {
                                     return <div> <Project content={project} /> </div>
                                 }
                             })}
