@@ -16,7 +16,7 @@ export const projects: { [key: string]: Project } = {
         skills: [
             skills.ANGULAR, skills.FIREBASE, skills.ALGOLIA, skills.UIUX, skills.TYPESCRIPT,
             skills.SCSS
-        ]
+        ],
     },
     'educaider': {
         title: 'Educaider',
