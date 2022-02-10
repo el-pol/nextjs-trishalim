@@ -99,8 +99,8 @@ const Home: NextPage = () => {
                         justifyContent: 'center'
                     }}>
                         <Link href='/experience' passHref>
-                            <a className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors my-5">
-                                Read more
+                            <a className="font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-6 py-2 rounded transition mt-5">
+                                Learn more
                             </a>
                         </Link>
                     </div>
@@ -122,14 +122,11 @@ const Home: NextPage = () => {
                 }}>
                     <Link href="mailto:hello@trishalim.com">
                         <a href="mailto:hello@trishalim.com"
-                           className="px-10 py-4 text-xl bg-black text-white hover:bg-pink rounded-xl transition-colors my-20">
+                           className="font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-6 py-2 rounded transition my-20">
                             Contact me
                         </a>
                     </Link>
                 </div>
-
-                <br/>
-                <br/>
             </main>
 
         </SiteLayout>
