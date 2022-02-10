@@ -21,8 +21,8 @@ export const Project = (props: {
         <div className="w-ful h-60 sm:h-80 md:h-60 rounded mb-5 bg-center bg-cover"style={{
             backgroundImage: `url(${imageUrl})`
           }}>
-          <div className="w-full h-full bg-pink rounded opacity-0 hover:opacity-80 transition-all duration-500 flex items-center justify-center">
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="text-white w-10 h-10" />
+          <div className="w-full h-full bg-pink rounded opacity-0 hover:opacity-100 transition-all duration-500 flex items-center justify-center font-bold text-white text-xl">
+            Read more
           </div>
         </div>
         <h3 className="mb-2 text-xl">{title}</h3>
