@@ -6,6 +6,7 @@ import { Content } from '../components/Content'
 import { Experience } from '../components/Experience'
 import Header from '../components/Header'
 import { Project } from '../components/Project'
+import SiteLayout from '../components/SiteLayout'
 import { Socials } from '../components/Socials'
 import { experiences } from '../content/experiences'
 import { posts } from '../content/posts'
@@ -19,29 +20,7 @@ const Home: NextPage = () => {
   const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`;
 
   return (
-    <div>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
-
-        <meta property="og:url" content="https://trishalim.com" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content={title}
-        />
-        <meta name="twitter:card" content={description} />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta property="og:image" content="/fb-social-share.jpg" />
-        <script async src="https://platform.twitter.com/widgets.js"></script>
-      </Head>
-
-      <Header />
-    
+    <SiteLayout>
       <main className="container p-5 lg:py-10 mx-auto max-w-3xl">
 
         <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
@@ -151,7 +130,7 @@ const Home: NextPage = () => {
         <br />
       </main>
 
-    </div>
+    </SiteLayout>
   )
 }
 
