@@ -16,8 +16,9 @@ const Experience = (props: {
     } = props.content;
 
     return (
-        <div className="mb-10">
-            <div className="md:flex flex-wrap items-center justify-between">
+        <div className="mb-10 md:flex md:space-x-8">
+            <p className="text-gray-500 text-sm my-2 md:w-3/12 md:text-right pt-1.5">{dateStart} - {dateEnd}</p>
+            <div className="md:flex flex-wrap items-center justify-between md:w-8/12">
                 <div className="flex my-2">
                     <h3 className="text-xl mr-5">
                         <Link href={link}>
@@ -27,11 +28,10 @@ const Experience = (props: {
                         </Link>
                     </h3>
                 </div>
-                <p className="text-gray-500 text-sm my-2">{dateStart} - {dateEnd}</p>
+                <p>
+                    {snippet}
+                </p>
             </div>
-            <p>
-                {snippet}
-            </p>
         </div>
     )
 }
