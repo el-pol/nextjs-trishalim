@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Skill } from "./skill";
+import { Project } from "./project";
 
 export interface Experience {
   position: string;
@@ -9,4 +10,6 @@ export interface Experience {
   description: ReactNode;
   skills: Array<Skill>;
   link: string;
+  projects?: Array<Project>;
+  snippet?: string;
 }
