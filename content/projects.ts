@@ -14,7 +14,7 @@ export const projects: { [key: string]: Project } = {
       `,
         snippet: 'A directory of dance studios',
         skills: [
-            skills.angular, skills.firebase, skills.algolia, skills.uiux, skills.typescript,
+            skills.angular, skills.firebase, skills.algolia, skills.ux, skills.typescript,
             skills.scss
         ],
     },
