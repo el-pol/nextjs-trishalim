@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Header } from '../components/Header'
+import { Header } from './Header'
 
 // @ts-ignore
 export default function SiteLayout({ children }) {
