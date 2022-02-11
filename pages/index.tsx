@@ -17,12 +17,12 @@ const Home: NextPage = () => {
 
                 <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
                     <div className="my-5 text-center md:text-left w-full md:w-10/12">
-                        <h1 className="font-bold">
+                        <h1 className="font-bold text-4xl sm:text-6xl">
                             Trisha Lim
                         </h1>
-                        <h2 className="my-3 text-2xl">Frontend Engineer ✨</h2>
+                        <h2 className="my-3 text-xl  sm:text-2xl">Frontend Engineer ✨</h2>
                     </div>
-                    <img className="my-5 mx-auto rounded-full w-6/12 sm:w-4/12 md:w-2/12 border-pink border-4"
+                    <img className="my-5 mx-auto rounded-full w-4/12 md:w-2/12 border-pink border-4"
                          src="/profile.png" alt="Trisha Lim"/>
                 </div>
 
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                     </div>
                 </div>
 
-                <span id="posts" className="block pb-20"/>
+                <span id="blog" className="block pb-20"/>
 
                 <h2 className="mb-8">Blog</h2>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
