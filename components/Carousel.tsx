@@ -1,11 +1,13 @@
-import {CarouselProvider, Slider, Slide, DotGroup, Dot} from 'pure-react-carousel'
+import {CarouselProvider, Slider, Slide, CarouselContext} from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Carousel = (props: {
+    title: string
     images: Array<string>
     className?: string
 }) => {
-    const { images, className = '' } = props
+    const { images, className = '', title } = props
+
     return (
         <CarouselProvider
             className={className}
@@ -21,18 +23,27 @@ const Carousel = (props: {
                     </Slide>
                 ))}
             </Slider>
-            <DotGroup className='flex space-x-3' renderDots={({ currentSlide }) => (
-                images.map((image, index) => (
-                    <Dot
-                        slide={index}
-                        className={`border rounded-md h-12 w-12 bg-cover bg-center hover:opacity-100 transition-opacity ${currentSlide === index ? '' : 'opacity-75'}`}
-                         key={index}
-                         style={{
-                            backgroundImage: `url(${images[index]})`
-                        }}
-                    />
-                ))
-            )} />
+
+            <CarouselContext.Consumer>
+                {({ state, setStoreState }) => {
+                    const { currentSlide } = state
+
+                    return (
+                        <div className='flex space-x-3'>
+                            {images.map((image, index) => (
+                                <button
+                                    className={`border rounded-md h-12 w-12 bg-cover bg-center hover:opacity-100 transition-opacity ${currentSlide === index ? '' : 'opacity-75'}`}
+                                    key={index}
+                                    style={{
+                                        backgroundImage: `url(${images[index]})`
+                                    }}
+                                    onClick={() => setStoreState({ currentSlide: index })}
+                                />
+                            ))}
+                        </div>
+                    )
+                }}
+            </CarouselContext.Consumer>
         </CarouselProvider>
     )
 }

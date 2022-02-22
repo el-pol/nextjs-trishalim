@@ -1,6 +1,4 @@
-import { useRouter } from 'next/router'
 import { projects } from '../../content/projects'
-import { Project as IProject } from '../../types/project'
 import { Skill } from '../../components/Skill'
 import { Project } from '../../components/Project'
 import SiteLayout from '../../components/SiteLayout'
@@ -41,7 +39,7 @@ export default function ProjectPage(props: ProjectPageProps) {
 
                     {
                         images?.length ? (
-                            <Carousel images={images} className='mb-5' />
+                            <Carousel images={images} className='mb-5' title={title} />
                         ): (
                             <img src={imageUrl} className='rounded mb-5' alt={`${title} screenshot`} />
                         )
