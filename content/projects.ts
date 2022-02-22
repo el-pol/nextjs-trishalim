@@ -32,6 +32,11 @@ export const projects: { [key: string]: Project } = {
         skills: [
             skills.react, skills.next, skills.typescript, skills.contentful, skills.algolia,
             skills.instantsearchjs
+        ],
+        images: [
+            '/project-educaider-1.png',
+            '/project-educaider-2.png',
+            '/project-educaider-3.png',
         ]
     },
     'dubber': {

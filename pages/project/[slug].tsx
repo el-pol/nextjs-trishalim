@@ -7,6 +7,7 @@ import SiteLayout from '../../components/SiteLayout'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import Carousel from "../../components/Carousel";
 
 interface ProjectPageProps {
     project: IProject;
@@ -14,7 +15,7 @@ interface ProjectPageProps {
 
 export default function ProjectPage(props: ProjectPageProps) {
     const { project } = props
-    const { slug, title, description, imageUrl, skills, link } = project
+    const { slug, title, description, imageUrl, images, skills, link } = project
     const button = (
         <Link href={link}>
             <a className='w-full justify-center flex items-center font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-4 py-1.5 rounded transition' target='_blank'>
@@ -27,20 +28,30 @@ export default function ProjectPage(props: ProjectPageProps) {
     return (
         <SiteLayout>
             <main>
-                <div className='max-w-2xl px-3 mx-auto my-16'>
+                <div className='max-w-3xl px-3 mx-auto my-16'>
+
                     <div className='flex justify-between items-center mb-8'>
                         <h1 className="text-2xl md:text-3xl w-full md:w-8/12">{title}</h1>
                         <span className='hidden md:flex'>
                             {button}
                         </span>
                     </div>
-                    <img src={imageUrl} className='rounded mb-5' alt={`${title} screenshot`} />
+
+                    {
+                        images?.length ? (
+                            <Carousel images={images} className='mb-5' />
+                        ): (
+                            <img src={imageUrl} className='rounded mb-5' alt={`${title} screenshot`} />
+                        )
+                    }
+
                     {
                         skills &&
                         <div className="flex flex-wrap mb-2">
                             {skills.map((s) => <Skill key={s.name} content={s} />)}
                         </div>
                     }
+
                     <p>{description}</p>
 
                     <div className='md:hidden flex justify-center my-10 w-full'>{button}</div>

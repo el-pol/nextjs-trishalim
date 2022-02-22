@@ -8,4 +8,5 @@ export interface Project {
   skills?: Array<Skill>;
   slug: string;
   snippet?: string;
+  images?: Array<string>;
 }
