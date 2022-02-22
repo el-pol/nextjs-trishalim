@@ -17,6 +17,11 @@ export const projects: { [key: string]: Project } = {
             skills.angular, skills.firebase, skills.algolia, skills.ux, skills.typescript,
             skills.scss
         ],
+        images: [
+            '/project-dancer-tribe-1.png',
+            '/project-dancer-tribe-2.png',
+            '/project-dancer-tribe-3.png'
+        ]
     },
     'educaider': {
         title: 'Educaider',
