@@ -8,14 +8,16 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/Carousel";
+import React from "react";
 
 interface ProjectPageProps {
-    project: IProject;
+    slug: string;
 }
 
 export default function ProjectPage(props: ProjectPageProps) {
-    const { project } = props
-    const { slug, title, description, imageUrl, images, skills, link } = project
+    const { slug } = props
+    const project = projects[slug]
+    const { title, description, imageUrl, images, skills, link, body, links } = project
     const button = (
         <Link href={link}>
             <a className='w-full justify-center flex items-center font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-4 py-1.5 rounded transition' target='_blank'>
@@ -52,7 +54,24 @@ export default function ProjectPage(props: ProjectPageProps) {
                         </div>
                     }
 
-                    <p>{description}</p>
+                    <div className='space-y-5 py-5'>
+                        <p>{description}</p>
+                        {body}
+                    </div>
+
+                    {links?.length && (
+                        <ul className='list-disc pl-8 space-y-2'>
+                            {links.map((link) => (
+                                <li key={link}>
+                                    <Link href={link} passHref>
+                                        <a target='_blank' className='text-pink underline hover:no-underline'>
+                                            {link}
+                                        </a>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
                     <div className='md:hidden flex justify-center my-10 w-full'>{button}</div>
                 </div>
@@ -88,7 +107,7 @@ export function getServerSideProps({ query }) {
 
     return {
         props: {
-            project
+            slug
         }
     }
 }

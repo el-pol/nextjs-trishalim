@@ -1,4 +1,5 @@
 import { Skill } from "./skill";
+import {ReactElement, ReactNode} from "react";
 
 export interface Project {
   title: string;
@@ -9,4 +10,6 @@ export interface Project {
   slug: string;
   snippet?: string;
   images?: Array<string>;
+  body?: ReactNode;
+  links?: Array<string>;
 }
