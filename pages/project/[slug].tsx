@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "../../components/Carousel";
 import React from "react";
+import Button from "../../components/Button";
 
 interface ProjectPageProps {
     slug: string;
@@ -17,13 +18,11 @@ export default function ProjectPage(props: ProjectPageProps) {
     const project = projects[slug]
     const { title, description, imageUrl, images, skills, link, body, links } = project
     const button = (
-        <Link href={link}>
-            <a className='w-full justify-center flex items-center font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-4 py-1.5 rounded transition' target='_blank'>
-                See live
+        <Button href={link} target='_blank'>
+            See live
 
-                <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3 w-3 h-3" />
-            </a>
-        </Link>
+            <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3 w-3 h-3" />
+        </Button>
     )
     return (
         <SiteLayout>

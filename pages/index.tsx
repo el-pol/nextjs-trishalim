@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-import Link from 'next/link'
 import React from 'react'
 import {Content} from '../components/Content'
 import Experience from '../components/Experience'
@@ -9,6 +8,7 @@ import {Socials} from '../components/Socials'
 import {experiences} from '../content/experiences'
 import {posts} from '../content/posts'
 import {projects} from '../content/projects'
+import Button from "../components/Button";
 
 const Home: NextPage = () => {
     return (
@@ -90,15 +90,8 @@ const Home: NextPage = () => {
                         ))
                     }
 
-                    <div style={{
-                        display: 'flex',
-                        justifyContent: 'center'
-                    }}>
-                        <Link href='/experience' passHref>
-                            <a className="font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition mt-5">
-                                Learn more
-                            </a>
-                        </Link>
+                    <div className='flex justify-center'>
+                        <Button href='/experience'>Learn more</Button>
                     </div>
                 </div>
 
@@ -112,16 +105,8 @@ const Home: NextPage = () => {
                     }
                 </div>
 
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center'
-                }}>
-                    <Link href="mailto:hello@trishalim.com">
-                        <a href="mailto:hello@trishalim.com"
-                           className="font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition my-20">
-                            Contact me
-                        </a>
-                    </Link>
+                <div className='flex justify-center my-24'>
+                    <Button href='mailto:hello@trishalim.com'>Contact me</Button>
                 </div>
             </main>
 

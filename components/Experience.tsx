@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, {ReactElement} from "react";
 import {Experience as IExperience} from "../types/experience";
-import {Skill} from "./Skill";
 
 const Experience = (props: {
     content: IExperience
