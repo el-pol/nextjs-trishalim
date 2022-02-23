@@ -81,7 +81,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                             {Object.keys(projects).filter((key) => key !== slug).map((key, index) => {
                                 const project = projects[key]
                                 if (index < 4) {
-                                    return <div> <Project content={project} /> </div>
+                                    return <div key={project.title}> <Project content={project} /> </div>
                                 }
                             })}
                         </div>
