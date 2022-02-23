@@ -13,6 +13,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import { services } from '../content/services'
 import Service from '../components/Service'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
     return (
@@ -25,8 +26,9 @@ const Home: NextPage = () => {
                         </h1>
                         <h2 className="my-3 text-xl  sm:text-2xl">Frontend Engineer ✨</h2>
                     </div>
-                    <img className="my-5 mx-auto rounded-full w-4/12 md:w-2/12 border-pink border-4"
-                         src="/profile.png" alt="Trisha Lim"/>
+                    <div className='my-5 mx-auto rounded-full w-4/12 md:w-2/12 border-pink border-4 overflow-hidden'>
+                        <Image src="/profile.png" alt="Trisha Lim" width='144' height='138'/>
+                    </div>
                 </div>
 
                 <span id="about" className="block mb-8"/>
