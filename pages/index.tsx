@@ -108,12 +108,8 @@ const Home: NextPage = () => {
                     }
                 </div>
 
-                <div className='flex justify-center mt-8'>
+                <div className='flex justify-center mt-8 mb-24'>
                     <Button href='/blog'>See all posts</Button>
-                </div>
-
-                <div className='flex justify-center my-24'>
-                    <Button href='mailto:hello@trishalim.com'>Contact me</Button>
                 </div>
             </main>
 

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Header } from './Header'
+import Footer from './Footer'
 
 // @ts-ignore
 export default function SiteLayout({ children }) {
@@ -7,7 +8,7 @@ export default function SiteLayout({ children }) {
     const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`
 
     return (
-        <>
+        <div className='flex flex-col justify-between h-full'>
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
@@ -28,9 +29,14 @@ export default function SiteLayout({ children }) {
                 <script async src="https://platform.twitter.com/widgets.js"></script>
             </Head>
 
-            <Header />
+            <div>
+                <Header />
 
-            {children}
-        </>
+                {children}
+            </div>
+
+
+            <Footer />
+        </div>
     )
 }
