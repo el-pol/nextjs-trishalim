@@ -18,7 +18,7 @@ export const Project = (props: {
         <div className="w-full h-60 sm:h-60 md:h-44 rounded mb-5 bg-center bg-cover" style={{
             backgroundImage: `url(${imageUrl})`
           }}>
-          <div className="w-full h-full bg-pink rounded opacity-0 hover:opacity-100 transition-all duration-500 flex items-center justify-center font-bold text-white text-xl">
+          <div className="w-full h-full bg-primary rounded opacity-0 hover:opacity-100 transition-all duration-500 flex items-center justify-center font-bold text-white text-xl">
             Read more
           </div>
         </div>

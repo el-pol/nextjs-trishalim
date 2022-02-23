@@ -18,7 +18,7 @@ export default function ProjectPage(props: ProjectPageProps) {
     const { title, description, imageUrl, images, skills, link, body, links } = project
     const button = (
         <Link href={link}>
-            <a className='w-full justify-center flex items-center font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-4 py-1.5 rounded transition' target='_blank'>
+            <a className='w-full justify-center flex items-center font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-4 py-1.5 rounded transition' target='_blank'>
                 See live
 
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3 w-3 h-3" />
@@ -62,7 +62,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                             {links.map((link) => (
                                 <li key={link}>
                                     <Link href={link} passHref>
-                                        <a target='_blank' className='text-pink underline hover:no-underline'>
+                                        <a target='_blank' className='text-primary underline hover:no-underline'>
                                             {link}
                                         </a>
                                     </Link>

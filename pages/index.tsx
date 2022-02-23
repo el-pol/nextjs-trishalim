@@ -49,13 +49,13 @@ const Home: NextPage = () => {
                     <p className="mb-8">
                         I also publish articles about tech and life. I recently wrote about <a
                         href="https://dev.to/trishathecookie/css-tricks-to-create-that-dark-futuristic-web3-look-53bm"
-                        target="_blank" className="text-pink underline hover:no-underline font-semibold" rel="noreferrer">CSS
+                        target="_blank" className="text-primary underline hover:no-underline font-semibold" rel="noreferrer">CSS
                         in Web3</a> and <a
                         href="https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof"
-                        target="_blank" className="text-pink underline hover:no-underline font-semibold" rel="noreferrer">
+                        target="_blank" className="text-primary underline hover:no-underline font-semibold" rel="noreferrer">
                         learning React Context
                     </a>. If you&apos;re interested in working with me, you can <a href="mailto:hello@trishalim.com"
-                                                                                   className="text-pink underline hover:no-underline font-semibold">
+                                                                                   className="text-primary underline hover:no-underline font-semibold">
                         send me an email
                     </a>.
                     </p>
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                         justifyContent: 'center'
                     }}>
                         <Link href='/experience' passHref>
-                            <a className="font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-6 py-2 rounded transition mt-5">
+                            <a className="font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition mt-5">
                                 Learn more
                             </a>
                         </Link>
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
                 }}>
                     <Link href="mailto:hello@trishalim.com">
                         <a href="mailto:hello@trishalim.com"
-                           className="font-semibold border-2 border-pink bg-pink hover:bg-white hover:text-pink text-white px-6 py-2 rounded transition my-20">
+                           className="font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition my-20">
                             Contact me
                         </a>
                     </Link>

@@ -34,7 +34,7 @@ export const Header = (): ReactElement => {
 
     return (
         <>
-            <div className="w-full bg-pink sticky top-0 shadow z-50 text-white">
+            <div className="w-full bg-primary sticky top-0 shadow z-50 text-white">
                 <div className='md:hidden w-full flex justify-between items-center px-5'>
                     <div>
                         <Link href='/' passHref>
@@ -53,7 +53,7 @@ export const Header = (): ReactElement => {
                                     {links.map((link) => (
                                         <Menu.Item key={link.url}>
                                             <Link href={link.url} passHref>
-                                                <a className="block text-pink font-semibold py-1.5 px-5 opacity-80 hover:opacity-100 text-sm hover:bg-gray-50 transition">{link.title}</a>
+                                                <a className="block text-primary font-semibold py-1.5 px-5 opacity-80 hover:opacity-100 text-sm hover:bg-gray-50 transition">{link.title}</a>
                                             </Link>
                                         </Menu.Item>
                                     ))}
