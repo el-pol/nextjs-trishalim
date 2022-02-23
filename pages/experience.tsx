@@ -4,12 +4,13 @@ import { experiences } from '../content/experiences'
 import Link from "next/link";
 import { Skill } from "../components/Skill";
 import { Project } from "../components/Project";
+import React from "react";
 
 export default function ExperiencePage() {
     return (
         <SiteLayout>
-            <main className='md:max-w-2xl px-3 py-16 mx-auto'>
-                <h1 className='text-3xl mb-10'>Work Experience</h1>
+            <main className="container py-10 lg:py-16">
+                <h2 className="mb-8">Work Experience</h2>
                 <div>
                     {
                         experiences.map((e) => (
@@ -40,7 +41,7 @@ export default function ExperiencePage() {
                                 {e.projects?.length && (
                                     <>
                                         <h2 className='text-gray-500 text-sm font-normal my-5'>Projects</h2>
-                                        <div className="grid md:grid-cols-2 gap-8">
+                                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                             {
                                                 e.projects.map((p) => (
                                                     <div key={p.link}><Project content={p} /></div>
