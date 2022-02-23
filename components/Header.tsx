@@ -11,20 +11,16 @@ export const Header = (): ReactElement => {
             url: '/',
         },
         {
-            title: 'About',
-            url: '/#about',
-        },
-        {
             title: 'Projects',
-            url: '/#projects',
+            url: '/projects',
         },
         {
-            title: 'Experience',
+            title: 'Work Experience',
             url: '/experience',
         },
         {
             title: 'Blog',
-            url: '/#blog',
+            url: '/blog',
         },
         {
             title: 'Contact',

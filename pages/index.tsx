@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 
                     <p className="mb-3">
                         I&apos;m a Frontend Engineer specializing in React + Next.js + TypeScript with
-                        5+ years experience building single page applications.
+                        6+ years experience building interactive web applications.
                         I&apos;m dedicated to delivering great user experiences by working closely with
                         designers, and writing good quality code to maintain a good developer experience.
                     </p>
