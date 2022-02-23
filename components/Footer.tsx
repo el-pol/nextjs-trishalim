@@ -2,6 +2,7 @@ import Button from "./Button"
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { Socials } from './Socials'
 
 const Footer = () => {
     return (
@@ -24,6 +25,8 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faEnvelope} className="ml-3 w-4 h-4" />
                     </Button>
                 </div>
+
+                <Socials size='sm' className='justify-center mt-20' />
             </div>
         </section>
     )

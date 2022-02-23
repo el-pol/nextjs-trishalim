@@ -9,6 +9,10 @@ import {experiences} from '../content/experiences'
 import {posts} from '../content/posts'
 import {projects} from '../content/projects'
 import Button from "../components/Button"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import { services } from '../content/services'
+import Service from '../components/Service'
 
 const Home: NextPage = () => {
     return (
@@ -60,57 +64,73 @@ const Home: NextPage = () => {
                     </p>
 
                     <p className="mb-12">
-                        📍 Koh Samui, Thailand.
+                        📍 Koh Phangan, Thailand.
                     </p>
                 </section>
 
-
                 <Socials/>
 
-                <span id="projects" className="block pb-16"/>
+                <section className='my-16'>
+                    <h2 className="mb-8">Projects</h2>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        {Object.keys(projects).slice(0, 3).map((key) => (
+                            <div
+                                key={projects[key].link}>
+                                <Project content={projects[key]} />
+                            </div>
+                        ))}
+                    </div>
+                    <div className='flex justify-center mt-8'>
+                        <Button href='/projects'>See all projects</Button>
+                    </div>
+                </section>
 
-                <h2 className="mb-8">Projects</h2>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {Object.keys(projects).slice(0, 3).map((key) => (
-                        <div
-                            key={projects[key].link}>
-                            <Project content={projects[key]} />
-                        </div>
-                    ))}
-                </div>
 
-                <div className='flex justify-center mt-8'>
-                    <Button href='/projects'>See all projects</Button>
-                </div>
+                <section className='my-16'>
+                    <h2 className='mb-8'>Services</h2>
 
-                <span id="experience" className="block pb-20"/>
-
-                <h2 className="mb-8">Experience</h2>
-                <div>
-                    {
-                        experiences.map((e) => (
-                            <Experience content={e} key={e.company}/>
-                        ))
-                    }
+                    <div className='grid lg:grid-cols-3 gap-5'>
+                        {services.map((service) => <Service key={service.title} content={service} />)}
+                    </div>
 
                     <div className='flex justify-center'>
-                        <Button href='/experience'>Learn more</Button>
+                        <Button href='mailto:hello@trishalim.com' className='mx-auto mt-8'>
+                            Inquire by email
+
+                            <FontAwesomeIcon icon={faEnvelope} className="ml-3 w-4 h-4" />
+                        </Button>
                     </div>
-                </div>
+                </section>
 
-                <span id="blog" className="block pb-20"/>
+                <section className='my-16'>
+                    <h2 className="mb-8">Experience</h2>
+                    <div>
+                        {
+                            experiences.map((e) => (
+                                <Experience content={e} key={e.company}/>
+                            ))
+                        }
 
-                <h2 className="mb-8">Latest Posts</h2>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {
-                        posts.slice(0, 3).map((c) => <div key={c.link}><Content content={c}/>
-                        </div>)
-                    }
-                </div>
+                        <div className='flex justify-center'>
+                            <Button href='/experience'>Learn more</Button>
+                        </div>
+                    </div>
+                </section>
 
-                <div className='flex justify-center mt-8 mb-24'>
-                    <Button href='/blog'>See all posts</Button>
-                </div>
+                <section className='my-16'>
+                    <h2 className="mb-8">Latest Posts</h2>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        {
+                            posts.slice(0, 3).map((c) => <div key={c.link}><Content content={c}/>
+                            </div>)
+                        }
+                    </div>
+
+                    <div className='flex justify-center mt-8'>
+                        <Button href='/blog'>See all posts</Button>
+                    </div>
+                </section>
+
             </main>
 
         </SiteLayout>

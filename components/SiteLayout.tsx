@@ -26,7 +26,6 @@ export default function SiteLayout({ children }) {
                     content={description}
                 />
                 <meta property="og:image" content="/fb-social-share.jpg" />
-                <script async src="https://platform.twitter.com/widgets.js"></script>
             </Head>
 
             <div>
@@ -34,7 +33,6 @@ export default function SiteLayout({ children }) {
 
                 {children}
             </div>
-
 
             <Footer />
         </div>

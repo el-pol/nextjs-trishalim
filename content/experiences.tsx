@@ -48,7 +48,7 @@ export const experiences: Array<Experience> = [
         ]
     },
     {
-        position: 'Web Developer',
+        position: 'Full-Stack Engineer',
         company: 'Catapult',
         dateStart: 'Apr 2017',
         dateEnd: 'Mar 2019',

@@ -73,7 +73,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                     <div className='md:hidden flex justify-center my-10 w-full'>{button}</div>
                 </div>
 
-                <div className='w-full my-20 pb-20'>
+                <div className='w-full pb-20'>
                     <div className='max-w-7xl px-3 mx-auto'>
                         <h2 className='text-lg md:text-3xl mb-12 text-center'>Other Projects</h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 md:gap-8">

@@ -4,7 +4,11 @@ import { faTwitter, faGithub, faLinkedin, faDev, faInstagram } from "@fortawesom
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
 
-export const Socials = (): ReactElement => {
+export const Socials = (props: {
+  size?: 'sm' | 'md'
+  className?: string
+}): ReactElement => {
+  const { size = 'md', className = '' } = props
 
   const links = [
     {
@@ -33,13 +37,23 @@ export const Socials = (): ReactElement => {
     }
   ]
 
+  const containerClass = {
+    sm: 'space-x-3',
+    md: 'space-x-5'
+  }
+
+  const iconClass = {
+    sm: 'w-5',
+    md: 'w-7'
+  }
+
   return (
-    <div className="flex items-center">
+    <div className={`${className} flex ${containerClass[size]}`}>
       {
         links.map((l) => (
           <Link href={l.link} key={l.link}>
             <a href={l.link} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={l.icon} className="w-7 mr-5 hover:text-primary transition-colors" />
+              <FontAwesomeIcon icon={l.icon} className={`hover:text-primary transition-colors ${iconClass[size]}`} />
             </a>
           </Link>
         ))
