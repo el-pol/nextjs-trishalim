@@ -1,8 +1,8 @@
-import React, { ReactElement } from "react";
-import { Content as IContent } from "../types/content";
-import Link from 'next/link';
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { ReactElement } from "react"
+import { Content as IContent } from "../types/content"
+import Link from 'next/link'
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Content = (props: {
   content: IContent
@@ -12,7 +12,7 @@ export const Content = (props: {
     title,
     link,
     description
-  } = props.content;
+  } = props.content
 
   return (
     <Link href={link}>

@@ -1,5 +1,5 @@
-import { Skill } from "./skill";
-import {ReactElement, ReactNode} from "react";
+import { Skill } from "./skill"
+import { ReactNode } from "react"
 
 export interface Project {
   title: string;

@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { Skill } from "./skill";
-import { Project } from "./project";
+import { ReactNode } from "react"
+import { Skill } from "./skill"
+import { Project } from "./project"
 
 export interface Experience {
   position: string;

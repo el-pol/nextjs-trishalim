@@ -1,16 +1,16 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { ReactElement } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { ReactElement } from "react"
 import { faTwitter, faGithub, faLinkedin, faDev, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import Link from "next/link";
+import Link from "next/link"
 
 export const Socials = (): ReactElement => {
 
   const links = [
-    // {
-    //   icon: faTwitter,
-    //   link: 'https://twitter.com/trishathecookie'
-    // },
+    {
+      icon: faTwitter,
+      link: 'https://twitter.com/trishathecookie'
+    },
     {
       icon: faDev,
       link: 'https://dev.to/trishathecookie'
@@ -31,7 +31,7 @@ export const Socials = (): ReactElement => {
       icon: faEnvelope,
       link: 'mailto:hello@trishalim.com'
     }
-  ];
+  ]
 
   return (
     <div className="flex items-center">

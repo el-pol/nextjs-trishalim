@@ -3,8 +3,8 @@ import { Header } from './Header'
 
 // @ts-ignore
 export default function SiteLayout({ children }) {
-    const title = `Trisha Lim - Frontend Engineer`;
-    const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`;
+    const title = `Trisha Lim - Frontend Engineer`
+    const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`
 
     return (
         <>

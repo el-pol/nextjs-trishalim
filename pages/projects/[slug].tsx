@@ -3,11 +3,11 @@ import { Skill } from '../../components/Skill'
 import { Project } from '../../components/Project'
 import SiteLayout from '../../components/SiteLayout'
 import Link from 'next/link'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import Carousel from "../../components/Carousel";
-import React from "react";
-import Button from "../../components/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import Carousel from "../../components/Carousel"
+import React from "react"
+import Button from "../../components/Button"
 
 interface ProjectPageProps {
     slug: string;

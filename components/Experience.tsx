@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React, {ReactElement} from "react";
-import {Experience as IExperience} from "../types/experience";
+import Link from "next/link"
+import React, {ReactElement} from "react"
+import {Experience as IExperience} from "../types/experience"
 
 const Experience = (props: {
     content: IExperience
@@ -12,7 +12,7 @@ const Experience = (props: {
         dateEnd,
         snippet,
         link
-    } = props.content;
+    } = props.content
 
     return (
         <div className="mb-10 md:flex md:space-x-8">
@@ -35,4 +35,4 @@ const Experience = (props: {
     )
 }
 
-export default Experience;
+export default Experience

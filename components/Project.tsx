@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
-import { Project as IProject } from "../types/project";
-import Link from 'next/link';
+import React, { ReactElement } from "react"
+import { Project as IProject } from "../types/project"
+import Link from 'next/link'
 
 export const Project = (props: {
   content: IProject
@@ -10,7 +10,7 @@ export const Project = (props: {
     title,
     slug,
     snippet
-  } = props.content;
+  } = props.content
 
   return (
     <Link href={`/projects/${slug}`} passHref>

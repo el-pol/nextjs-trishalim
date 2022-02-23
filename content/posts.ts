@@ -24,4 +24,4 @@ export const posts = [
         imageUrl: 'https://trisha-lim.ghost.io/content/images/size/w800/2021/10/DSC3989-1.jpeg',
         link: 'https://trisha-lim.ghost.io/magical-sakura-days-in-kyoto-japan/'
     }
-];
+]

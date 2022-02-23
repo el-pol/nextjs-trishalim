@@ -8,7 +8,7 @@ import {Socials} from '../components/Socials'
 import {experiences} from '../content/experiences'
 import {posts} from '../content/posts'
 import {projects} from '../content/projects'
-import Button from "../components/Button";
+import Button from "../components/Button"
 
 const Home: NextPage = () => {
     return (

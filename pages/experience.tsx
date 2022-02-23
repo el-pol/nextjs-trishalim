@@ -1,10 +1,9 @@
-import Experience from '../components/Experience'
 import SiteLayout from '../components/SiteLayout'
 import { experiences } from '../content/experiences'
-import Link from "next/link";
-import { Skill } from "../components/Skill";
-import { Project } from "../components/Project";
-import React from "react";
+import Link from "next/link"
+import { Skill } from "../components/Skill"
+import { Project } from "../components/Project"
+import React from "react"
 
 export default function ExperiencePage() {
     return (

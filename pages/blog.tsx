@@ -1,7 +1,7 @@
-import SiteLayout from "../components/SiteLayout";
-import React from "react";
-import {posts} from "../content/posts";
-import {Content} from "../components/Content";
+import SiteLayout from "../components/SiteLayout"
+import React from "react"
+import {posts} from "../content/posts"
+import {Content} from "../components/Content"
 
 const Blog = () => {
     return (

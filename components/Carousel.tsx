@@ -1,12 +1,12 @@
 import {CarouselProvider, Slider, Slide, CarouselContext} from 'pure-react-carousel'
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import 'pure-react-carousel/dist/react-carousel.es.css'
 
 const Carousel = (props: {
     title: string
     images: Array<string>
     className?: string
 }) => {
-    const { images, className = '', title } = props
+    const { images, className = '' } = props
 
     return (
         <CarouselProvider

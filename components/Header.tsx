@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React, {ReactElement} from "react";
+import Link from "next/link"
+import React, {ReactElement} from "react"
 import {Menu} from '@headlessui/react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 export const Header = (): ReactElement => {
@@ -26,7 +26,7 @@ export const Header = (): ReactElement => {
             title: 'Contact',
             url: 'mailto:hello@trishalim.com'
         },
-    ];
+    ]
 
     return (
         <>
@@ -73,4 +73,4 @@ export const Header = (): ReactElement => {
     )
 }
 
-export default Header;
+export default Header

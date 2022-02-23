@@ -93,4 +93,4 @@ export const experiences: Array<Experience> = [
             skills.react, skills.mysql, skills.spring, skills.java
         ]
     }
-];
+]
