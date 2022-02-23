@@ -1,5 +1,6 @@
 import { Skill } from "./skill"
 import { ReactNode } from "react"
+import Testimonial from "./testimonial"
 
 export interface Project {
   title: string;
@@ -12,4 +13,5 @@ export interface Project {
   images?: Array<string>;
   body?: ReactNode;
   links?: Array<string>;
+  testimonials?: Array<Testimonial>;
 }

@@ -8,6 +8,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "../../components/Carousel"
 import React from "react"
 import Button from "../../components/Button"
+import Testimonial from "../../components/Testimonial"
 
 interface ProjectPageProps {
     slug: string;
@@ -16,7 +17,7 @@ interface ProjectPageProps {
 export default function ProjectPage(props: ProjectPageProps) {
     const { slug } = props
     const project = projects[slug]
-    const { title, description, imageUrl, images, skills, link, body, links } = project
+    const { title, description, imageUrl, images, skills, link, body, links, testimonials } = project
     const button = (
         <Button href={link} target='_blank'>
             See live
@@ -71,6 +72,17 @@ export default function ProjectPage(props: ProjectPageProps) {
                     )}
 
                     <div className='md:hidden flex justify-center my-10 w-full'>{button}</div>
+
+                    {testimonials?.length ? (
+                        <section className='my-16 space-y-8'>
+                            <h2 className='text-2xl'>References</h2>
+                            {
+                                testimonials.map((testimonial) => (
+                                    <Testimonial key={testimonial.name} content={testimonial} />
+                                ))
+                            }
+                        </section>
+                    ): <></>}
                 </div>
 
                 <div className='w-full pb-20'>

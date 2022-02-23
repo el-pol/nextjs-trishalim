@@ -22,6 +22,21 @@ export const projects: { [key: string]: Project } = {
             '/project-dancer-tribe-1.png',
             '/project-dancer-tribe-2.png',
             '/project-dancer-tribe-3.png'
+        ],
+        testimonials: [
+            // {
+            //     name: 'Judith Black',
+            //     position: 'CEO, Tuple',
+            //     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+            //     imageUrl: '/profile.png'
+            // },
+            //
+            // {
+            //     name: 'Judith Black',
+            //     position: 'CEO, Tuple',
+            //     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+            //     imageUrl: '/profile.png'
+            // }
         ]
     },
     'educaider': {
