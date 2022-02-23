@@ -27,7 +27,7 @@ export default function ProjectPage(props: ProjectPageProps) {
     return (
         <SiteLayout>
             <main>
-                <div className='max-w-3xl px-3 mx-auto my-16'>
+                <div className='container py-10 lg:py-16'>
 
                     <div className='flex justify-between items-center mb-8'>
                         <h1 className="text-2xl md:text-3xl w-full md:w-8/12">{title}</h1>

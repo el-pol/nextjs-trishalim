@@ -13,7 +13,7 @@ export const Project = (props: {
   } = props.content;
 
   return (
-    <Link href={`/project/${slug}`} passHref>
+    <Link href={`/projects/${slug}`} passHref>
       <a>
         <div className="w-full h-60 sm:h-60 md:h-44 rounded mb-5 bg-center bg-cover" style={{
             backgroundImage: `url(${imageUrl})`

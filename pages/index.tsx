@@ -13,8 +13,7 @@ import Button from "../components/Button";
 const Home: NextPage = () => {
     return (
         <SiteLayout>
-            <main className="max-w-4xl p-5 lg:py-10 mx-auto">
-
+            <main className="container py-5 lg:py-12">
                 <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
                     <div className="my-5 text-center md:text-left w-full md:w-10/12">
                         <h1 className="font-bold text-4xl sm:text-6xl">
@@ -72,12 +71,16 @@ const Home: NextPage = () => {
 
                 <h2 className="mb-8">Projects</h2>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {Object.keys(projects).map((key) => (
+                    {Object.keys(projects).slice(0, 3).map((key) => (
                         <div
                             key={projects[key].link}>
                             <Project content={projects[key]} />
                         </div>
                     ))}
+                </div>
+
+                <div className='flex justify-center mt-8'>
+                    <Button href='/projects'>See all projects</Button>
                 </div>
 
                 <span id="experience" className="block pb-20"/>
@@ -97,12 +100,16 @@ const Home: NextPage = () => {
 
                 <span id="blog" className="block pb-20"/>
 
-                <h2 className="mb-8">Blog</h2>
+                <h2 className="mb-8">Latest Posts</h2>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {
-                        posts.map((c) => <div key={c.link}><Content content={c}/>
+                        posts.slice(0, 3).map((c) => <div key={c.link}><Content content={c}/>
                         </div>)
                     }
+                </div>
+
+                <div className='flex justify-center mt-8'>
+                    <Button href='/blog'>See all posts</Button>
                 </div>
 
                 <div className='flex justify-center my-24'>

@@ -12,7 +12,7 @@ const Button = (props: {
         <Link href={href} passHref>
             <a
                 target={target}
-                className="flex items-center font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition">
+                className="text-center flex items-center font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition">
                 {children}
             </a>
         </Link>
