@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='container text-center'>
                 <h2 className='mb-10'>Wanna work with me?</h2>
 
-                <div className='flex justify-center items-center gap-x-5'>
+                <div className='flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-5'>
                     <Button href='https://twitter.com/trishathecookie' target='_blank'>
                         DM me on Twitter
 
