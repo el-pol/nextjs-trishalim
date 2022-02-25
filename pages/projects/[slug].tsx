@@ -18,7 +18,7 @@ interface ProjectPageProps {
 export default function ProjectPage(props: ProjectPageProps) {
     const { slug } = props
     const project = projects[slug]
-    const { title, description, imageUrl, images, skills, link, body, links, testimonials } = project
+    const { title, description, imageUrl, images, skills, link, body, links, testimonials, otherProjects } = project
     const button = (
         <Button href={link} target='_blank'>
             See live
@@ -28,8 +28,8 @@ export default function ProjectPage(props: ProjectPageProps) {
     )
     return (
         <SiteLayout>
-            <main>
-                <div className='container py-10 lg:py-16'>
+            <main className='container pt-10 pb-32 lg:pt-16'>
+                <div>
 
                     <div className='flex justify-between items-center mb-8'>
                         <h1 className="text-2xl md:text-3xl w-full md:w-8/12">{title}</h1>
@@ -86,19 +86,14 @@ export default function ProjectPage(props: ProjectPageProps) {
                     ): <></>}
                 </div>
 
-                <div className='w-full pb-20'>
-                    <div className='max-w-7xl px-3 mx-auto'>
-                        <h2 className='text-lg md:text-3xl mb-12 text-center'>Other Projects</h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 md:gap-8">
-                            {Object.keys(projects).filter((key) => key !== slug).map((key, index) => {
-                                const project = projects[key]
-                                if (index < 4) {
-                                    return <div key={project.title}> <Project content={project} /> </div>
-                                }
-                            })}
-                        </div>
+                <section className='mt-16'>
+                    <h2 className='text-lg md:text-3xl mb-12 text-center'>Other Projects</h2>
+                    <div className="grid md:grid-cols-3 gap-y-8 md:gap-8">
+                        {otherProjects?.map((project) =>
+                            <div key={project.slug}> <Project content={project} /> </div>
+                        )}
                     </div>
-                </div>
+                </section>
             </main>
         </SiteLayout>
     )

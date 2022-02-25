@@ -14,4 +14,5 @@ export interface Project {
   body?: ReactNode;
   links?: Array<string>;
   testimonials?: Array<Testimonial>;
+  otherProjects?: Array<Project>;
 }
