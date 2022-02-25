@@ -13,27 +13,33 @@ export const Socials = (props: {
   const links = [
     {
       icon: faTwitter,
-      link: 'https://twitter.com/trishathecookie'
+      link: 'https://twitter.com/trishathecookie',
+      title: 'Twitter'
     },
     {
       icon: faDev,
-      link: 'https://dev.to/trishathecookie'
+      link: 'https://dev.to/trishathecookie',
+      title: 'Dev.to'
     },
     {
       icon: faGithub,
-      link: 'https://github.com/trishalim'
+      link: 'https://github.com/trishalim',
+      title: 'GitHub'
     },
     {
       icon: faLinkedin,
-      link: 'https://www.linkedin.com/in/trisha-jean-lim/'
+      link: 'https://www.linkedin.com/in/trisha-jean-lim/',
+      title: 'LinkedIn'
     },
     {
       icon: faInstagram,
       link: 'https://www.instagram.com/thetrishalim/',
+      title: 'Instagram'
     },
     {
       icon: faEnvelope,
-      link: 'mailto:hello@trishalim.com'
+      link: 'mailto:hello@trishalim.com',
+      title: 'Email'
     }
   ]
 
@@ -52,7 +58,7 @@ export const Socials = (props: {
       {
         links.map((l) => (
           <Link href={l.link} key={l.link}>
-            <a href={l.link} target="_blank" rel="noreferrer">
+            <a href={l.link} target="_blank" rel="noreferrer" aria-label={l.title}>
               <FontAwesomeIcon icon={l.icon} className={`hover:text-primary transition-colors ${iconClass[size]}`} />
             </a>
           </Link>

@@ -39,10 +39,10 @@ export const Header = (): ReactElement => {
                     </div>
                     <div className='relative'>
                         <Menu>
-                            <Menu.Button>
-                            <span className='inline-block px-4 py-2.5 rounded mt-1'>
-                                <FontAwesomeIcon icon={faBars} className="w-3.5" />
-                            </span>
+                            <Menu.Button aria-label='navigation'>
+                                <span className='inline-block px-4 py-2.5 rounded mt-1'>
+                                    <FontAwesomeIcon icon={faBars} className="w-3.5" />
+                                </span>
                             </Menu.Button>
                             <Menu.Items>
                                 <ul className='absolute top-full right-0 bg-white shadow-lg rounded py-2 w-48'>

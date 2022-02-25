@@ -16,12 +16,12 @@ export const posts = [
     },
     {
         title: `Best Investments I've Made Before 25`,
-        imageUrl: 'https://images.unsplash.com/photo-1616077168639-f770d830e3d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzNXx8c3RvY2tzfGVufDB8fHx8MTYzMzc2NzI0OQ&ixlib=rb-1.2.1&q=80&w=800',
+        imageUrl: '/blog-best-investments-i-made-before-25.jpeg',
         link: 'https://trisha-lim.ghost.io/best-investments-ive-made-before-25/',
     },
     {
         title: 'Magical Sakura Days in Japan',
-        imageUrl: 'https://trisha-lim.ghost.io/content/images/size/w800/2021/10/DSC3989-1.jpeg',
+        imageUrl: '/blog-magical-sakura-days-in-japan.jpeg',
         link: 'https://trisha-lim.ghost.io/magical-sakura-days-in-kyoto-japan/'
     }
 ]

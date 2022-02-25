@@ -9,6 +9,7 @@ import Carousel from "../../components/Carousel"
 import React from "react"
 import Button from "../../components/Button"
 import Testimonial from "../../components/Testimonial"
+import Image from "next/image"
 
 interface ProjectPageProps {
     slug: string;
@@ -41,7 +42,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                         images?.length ? (
                             <Carousel images={images} className='mb-5' title={title} />
                         ): (
-                            <img src={imageUrl} className='rounded mb-5' alt={`${title} screenshot`} />
+                            <Image src={imageUrl} className='mb-5' width='1000' height='750' alt={`${title} screenshot`} />
                         )
                     }
 
