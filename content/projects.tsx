@@ -14,8 +14,8 @@ const dancerTribe = {
       `,
     snippet: 'A directory of dance studios',
     skills: [
-        skills.angular, skills.firebase, skills.algolia, skills.ux, skills.typescript,
-        skills.scss
+        skills.angular, skills.firebase, skills.algolia, skills.ux, skills.ts,
+        skills.sass
     ],
     images: [
         '/project-dancer-tribe-1.png',
@@ -51,7 +51,7 @@ const educaider = {
       `,
     snippet: 'Explore 800+ courses in New Zealand',
     skills: [
-        skills.react, skills.next, skills.typescript, skills.contentful, skills.algolia,
+        skills.react, skills.nextjs, skills.ts, skills.contentful, skills.algolia,
         skills.instantsearchjs
     ],
     images: [
@@ -73,7 +73,7 @@ const dubber = {
       `,
     snippet: `Marketing website for the world's leading provider of cloud-based call recording and voice AI`,
     skills: [
-        skills.react, skills.next, skills.typescript, skills.contentful,
+        skills.react, skills.nextjs, skills.ts, skills.contentful,
     ]
 }
 
@@ -90,7 +90,7 @@ const ipinfo = {
         '/project-ipinfo-3.png',
     ],
     skills: [
-        skills.react, skills.next, skills.html, skills.tailwind, skills.javascript
+        skills.react, skills.nextjs, skills.html, skills.tailwind, skills.js
     ],
     body: <>
         <p>
@@ -130,7 +130,7 @@ const nzma = {
         the designs.
       `,
     skills: [
-        skills.react, skills.next, skills.typescript, skills.contentful,
+        skills.react, skills.nextjs, skills.ts, skills.contentful,
     ]
 }
 
@@ -145,7 +145,7 @@ const nzst = {
         I developed the CMS components needed to accomplish the design.
       `,
     skills: [
-        skills.react, skills.next, skills.typescript, skills.contentful,
+        skills.react, skills.nextjs, skills.ts, skills.contentful,
     ]
 }
 
@@ -160,7 +160,7 @@ const apolinar = {
         implementing the design of their landing page.
       `,
     skills: [
-        skills.html, skills.scss, skills.javascript
+        skills.html, skills.sass, skills.js
     ]
 }
 

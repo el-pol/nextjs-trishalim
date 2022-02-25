@@ -2,72 +2,118 @@ import { Skill } from "../types/skill"
 
 export const skills: { [key: string]: Skill } = {
     react: {
-        name: 'React'
+        name: 'React',
+        slug: 'react',
+        icon: 'logos:react'
     },
-    next: {
-        name: 'Next.js'
+    nextjs: {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon',
+        slug: 'nextjs'
     },
     contentful: {
-        name: 'Contentful CMS'
+        name: 'Contentful CMS',
+        icon: 'logos:contentful',
+        slug: 'contentful'
     },
     angular: {
-        name: 'Angular'
+        name: 'Angular',
+        icon: 'logos:angular',
+        slug: 'angular',
     },
     html: {
-        name: 'HTML'
+        name: 'HTML',
+        icon: 'logos:html-5',
+        slug: 'html',
     },
     css: {
-        name: 'CSS'
+        name: 'CSS',
+        icon: 'logos:css-3',
+        slug: 'css',
     },
-    javascript: {
-        name: 'JavaScript'
+    js: {
+        name: 'JavaScript',
+        icon: 'logos:javascript',
+        slug: 'js',
     },
-    typescript: {
-        name: 'TypeScript'
+    ts: {
+        name: 'TypeScript',
+        icon: 'logos:typescript-icon',
+        slug: 'ts',
     },
-    scss: {
-        name: 'SCSS'
+    sass: {
+        name: 'SASS',
+        icon: 'logos:sass',
+        slug: 'sass',
     },
     less: {
-        name: 'LESS'
+        name: 'LESS',
+        icon: 'logos:less',
+        slug: 'less',
     },
     git: {
-        name: 'Git'
+        name: 'Git',
+        icon: 'fa-brands:git',
+        slug: 'git',
     },
     firebase: {
-        name: 'Firebase'
+        name: 'Firebase',
+        icon: 'logos:firebase',
+        slug: 'firebase',
     },
     mysql: {
-        name: 'MySQL'
+        name: 'MySQL',
+        icon: 'logos:mysql',
+        slug: 'mysql',
     },
     algolia: {
-        name: 'Algolia'
+        name: 'Algolia',
+        icon: 'logos:algolia',
+        slug: 'algolia',
     },
     bootstrap: {
-        name: 'Bootstrap'
+        name: 'Bootstrap',
+        icon: 'logos:bootstrap',
+        slug: 'bootstrap',
     },
     spring: {
-        name: 'Spring'
+        name: 'Spring',
+        icon: 'logos:spring',
+        slug: 'spring',
     },
     java: {
-        name: 'Java'
+        name: 'Java',
+        icon: 'logos:java',
+        slug: 'java',
     },
     redux: {
-        name: 'Redux'
+        name: 'Redux',
+        icon: 'logos:redux',
+        slug: 'redux',
     },
     cpp: {
-        name: 'C++'
+        name: 'C++',
+        icon: 'logos:c-plusplus',
+        slug: 'cpp',
     },
     scrum: {
-        name: 'Scrum'
+        name: 'Scrum',
+        icon: 'subway:round-arrow-2',
+        slug: 'scrum',
     },
     ux: {
         name: 'UI/UX Design',
+        icon: 'logos:codicon:terminal-tmux',
+        slug: 'ux',
     },
     instantsearchjs: {
-        name: 'InstantSearch.js'
+        name: 'InstantSearch.js',
+        icon: '',
+        slug: 'instantsearchjs',
     },
     tailwind: {
-        name: 'Tailwind'
+        name: 'Tailwind',
+        icon: 'logos:tailwindcss-icon',
+        slug: 'tailwind',
     }
 }

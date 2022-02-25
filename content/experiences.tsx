@@ -23,8 +23,8 @@ export const experiences: Array<Experience> = [
             </p>
         </>,
         skills: [
-            skills.react, skills.next, skills.contentful, skills.angular, skills.scss, skills.less,
-            skills.typescript, skills.bootstrap, skills.algolia, skills.redux
+            skills.react, skills.nextjs, skills.contentful, skills.angular, skills.sass, skills.less,
+            skills.ts, skills.bootstrap, skills.algolia, skills.redux
         ],
         projects: [
             projects.educaider, projects.dubber, projects.nzma, projects.nzst, projects.apolinar
@@ -44,7 +44,7 @@ export const experiences: Array<Experience> = [
             using Angular with a team of 30+ devs and led tasking of user stories.
         </p>,
         skills: [
-            skills.angular, skills.javascript, skills.typescript, skills.git, skills.scrum
+            skills.angular, skills.js, skills.ts, skills.git, skills.scrum
         ]
     },
     {
@@ -60,7 +60,7 @@ export const experiences: Array<Experience> = [
             for users to resize and format various elements in the form.
         </p>,
         skills: [
-            skills.angular, skills.ux, skills.javascript, skills.typescript, skills.spring, skills.java
+            skills.angular, skills.ux, skills.js, skills.ts, skills.spring, skills.java
         ]
     },
     {

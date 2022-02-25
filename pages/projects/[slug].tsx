@@ -42,7 +42,9 @@ export default function ProjectPage(props: ProjectPageProps) {
                         images?.length ? (
                             <Carousel images={images} className='mb-5' title={title} />
                         ): (
-                            <Image src={imageUrl} className='mb-5' width='1000' height='750' alt={`${title} screenshot`} />
+                            <div className='mb-5'>
+                                <Image src={imageUrl} className='mb-5' width='1000' height='750' alt={`${title} screenshot`} />
+                            </div>
                         )
                     }
 
