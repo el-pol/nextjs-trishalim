@@ -66,5 +66,8 @@ export const skills: { [key: string]: Skill } = {
     },
     instantsearchjs: {
         name: 'InstantSearch.js'
+    },
+    tailwind: {
+        name: 'Tailwind'
     }
 }

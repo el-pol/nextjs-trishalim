@@ -54,7 +54,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                     }
 
                     <div className='space-y-5 py-5'>
-                        <p>{description}</p>
+                        {description && <p>{description}</p>}
                         {body}
                     </div>
 

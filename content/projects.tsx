@@ -89,6 +89,9 @@ const ipinfo = {
         '/project-ipinfo-2.png',
         '/project-ipinfo-3.png',
     ],
+    skills: [
+        skills.react, skills.next, skills.html, skills.tailwind, skills.javascript
+    ],
     body: <>
         <p>
             IPinfo is the trusted source for IP address information, handling 40 billion
