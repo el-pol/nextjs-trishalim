@@ -4,6 +4,8 @@ import Link from "next/link"
 import { Skill } from "../components/Skill"
 import { Project } from "../components/Project"
 import React from "react"
+import SkillLogos from "../components/SkillLogos";
+import SkillsSection from "../components/SkillsSection";
 
 export default function ExperiencePage() {
     return (
@@ -54,6 +56,8 @@ export default function ExperiencePage() {
                     }
                 </div>
             </main>
+
+            <SkillsSection />
         </SiteLayout>
     )
 }

@@ -5,6 +5,7 @@ import React from "react"
 import {skills} from "../content/skills"
 import {projects} from "../content/projects"
 import {Project as IProject} from "../types/project"
+import SkillsSection from "../components/SkillsSection"
 
 interface ProjectPageProps {
     slug: string;
@@ -24,24 +25,28 @@ export default function ProjectPage(props: ProjectPageProps) {
 
     return (
         <SiteLayout>
-            <main className='container pt-10 pb-32 lg:pt-16'>
-                <div className="mb-8 flex items-center">
-                    {icon && <Icon icon={icon} className='block mr-5 text-5xl' />}
-                    <h1 className='text-2xl md:text-3xl'>
-                        {name} Projects
-                    </h1>
+            <main>
+                <div className='container py-10 lg:py-16'>
+                    <div className="mb-8 flex items-center">
+                        {icon && <Icon icon={icon} className='block mr-5 text-5xl' />}
+                        <h2 className='text-2xl md:text-3xl'>
+                            {name} Projects
+                        </h2>
+                    </div>
+                    {
+                        projectList?.length ? (
+                            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                                {projectList.map((p) => (
+                                    <Project content={p} key={p.slug} />
+                                ))}
+                            </div>
+                        ): (
+                            <p>No projects found.</p>
+                        )
+                    }
                 </div>
-                {
-                    projectList?.length ? (
-                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                            {projectList.map((p) => (
-                                <Project content={p} key={p.slug} />
-                            ))}
-                        </div>
-                    ): (
-                        <p>No projects found.</p>
-                    )
-                }
+
+                <SkillsSection title='Browse Projects by Skill' />
             </main>
         </SiteLayout>
     )

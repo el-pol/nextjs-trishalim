@@ -1,0 +1,16 @@
+import SkillLogos from "./SkillLogos"
+import React from "react"
+
+const SkillsSection = ({
+   title = 'Skills'
+}: {
+    title?: string
+}) => (
+    <section className='py-16 bg-neutral-50'>
+        <h2 className='text-2xl md:text-3xl mb-12 text-center'>{title}</h2>
+
+        <SkillLogos className='max-w-3xl justify-center gap-8 text-3xl md:text-4xl m-auto' />
+    </section>
+)
+
+export default SkillsSection
