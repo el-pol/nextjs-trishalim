@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 /**
  * See full Tailwind color palette options here
@@ -20,8 +20,8 @@ const colors = require('tailwindcss/colors')
 // const primary = colors.rose
 const primary = {
   ...colors.pink,
-  '500': '#FF1B75'
-}
+  500: "#FF1B75",
+};
 
 module.exports = {
   content: [
@@ -34,28 +34,28 @@ module.exports = {
       colors: {
         primary: {
           ...primary,
-          DEFAULT: primary['500']
-        }
-      }
+          DEFAULT: primary["500"],
+        },
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [
-    function({ addComponents }) {
+    function ({ addComponents }) {
       addComponents({
-        '.container': {
-          paddingLeft: '1rem',
-          paddingRight: '1rem',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '100%',
-          '@screen md': {
-            maxWidth: '896px'
+        ".container": {
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+          marginLeft: "auto",
+          marginRight: "auto",
+          maxWidth: "100%",
+          "@screen md": {
+            maxWidth: "896px",
           },
-        }
-      })
-    }
-  ]
-}
+        },
+      });
+    },
+  ],
+};

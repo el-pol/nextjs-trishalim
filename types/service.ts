@@ -1,5 +1,5 @@
 export default interface Service {
-    title: string
-    description: string
-    emoji?: string
+  title: string;
+  description: string;
+  emoji?: string;
 }
