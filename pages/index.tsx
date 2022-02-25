@@ -89,7 +89,7 @@ const Home: NextPage = () => {
                 <section className='my-16'>
                     <h2 className='mb-8'>Services</h2>
 
-                    <div className='grid lg:grid-cols-3 gap-5'>
+                    <div className='grid md:grid-cols-3 gap-5'>
                         {services.map((service) => <Service key={service.title} content={service} />)}
                     </div>
 

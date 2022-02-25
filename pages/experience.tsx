@@ -4,8 +4,7 @@ import Link from "next/link"
 import { Skill } from "../components/Skill"
 import { Project } from "../components/Project"
 import React from "react"
-import SkillLogos from "../components/SkillLogos";
-import SkillsSection from "../components/SkillsSection";
+import SkillsSection from "../components/SkillsSection"
 
 export default function ExperiencePage() {
     return (
