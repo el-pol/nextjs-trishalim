@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { ReactElement } from "react"
-import { faTwitter, faGithub, faLinkedin, faDev, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
+import Icon from "./Icon"
 
 export const Socials = (props: {
   size?: 'sm' | 'md'
@@ -12,45 +10,40 @@ export const Socials = (props: {
 
   const links = [
     {
-      icon: faTwitter,
+      icon: 'fa6-brands:twitter',
       link: 'https://twitter.com/trishathecookie',
       title: 'Twitter'
     },
     {
-      icon: faDev,
+      icon: 'fa6-brands:dev',
       link: 'https://dev.to/trishathecookie',
       title: 'Dev.to'
     },
     {
-      icon: faGithub,
+      icon: 'fa6-brands:github',
       link: 'https://github.com/trishalim',
       title: 'GitHub'
     },
     {
-      icon: faLinkedin,
+      icon: 'fa6-brands:linkedin',
       link: 'https://www.linkedin.com/in/trisha-jean-lim/',
       title: 'LinkedIn'
     },
     {
-      icon: faInstagram,
+      icon: 'fa6-brands:instagram',
       link: 'https://www.instagram.com/thetrishalim/',
       title: 'Instagram'
     },
     {
-      icon: faEnvelope,
+      icon: 'fa-solid:envelope',
       link: 'mailto:hello@trishalim.com',
       title: 'Email'
     }
   ]
 
   const containerClass = {
-    sm: 'space-x-3',
-    md: 'space-x-5'
-  }
-
-  const iconClass = {
-    sm: 'w-5',
-    md: 'w-7'
+    sm: 'space-x-3 text-xl',
+    md: 'space-x-4 text-2xl'
   }
 
   return (
@@ -59,7 +52,7 @@ export const Socials = (props: {
         links.map((l) => (
           <Link href={l.link} key={l.link}>
             <a href={l.link} target="_blank" rel="noreferrer" aria-label={l.title}>
-              <FontAwesomeIcon icon={l.icon} className={`hover:text-primary transition-colors ${iconClass[size]}`} />
+              <Icon icon={l.icon} className={`hover:text-primary transition-colors}`} />
             </a>
           </Link>
         ))

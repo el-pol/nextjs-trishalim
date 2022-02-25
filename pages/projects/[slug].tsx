@@ -3,8 +3,6 @@ import { Skill } from '../../components/Skill'
 import { Project } from '../../components/Project'
 import SiteLayout from '../../components/SiteLayout'
 import Link from 'next/link'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "../../components/Carousel"
 import React from "react"
 import Button from "../../components/Button"
@@ -20,10 +18,8 @@ export default function ProjectPage(props: ProjectPageProps) {
     const project = projects[slug]
     const { title, description, imageUrl, images, skills, link, body, links, testimonials, otherProjects } = project
     const button = (
-        <Button href={link} target='_blank'>
+        <Button href={link} target='_blank' icon='fa-solid:external-link-alt'>
             See live
-
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-3 w-3 h-3" />
         </Button>
     )
     return (

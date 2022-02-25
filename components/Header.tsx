@@ -1,9 +1,8 @@
 import Link from "next/link"
 import React, {ReactElement} from "react"
 import {Menu} from '@headlessui/react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Icon from "./Icon"
 export const Header = (): ReactElement => {
     const links = [
         {
@@ -41,7 +40,7 @@ export const Header = (): ReactElement => {
                         <Menu>
                             <Menu.Button aria-label='navigation'>
                                 <span className='inline-block px-4 py-2.5 rounded mt-1'>
-                                    <FontAwesomeIcon icon={faBars} className="w-3.5" />
+                                    <Icon icon='fa-solid:bars' />
                                 </span>
                             </Menu.Button>
                             <Menu.Items>

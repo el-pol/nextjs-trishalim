@@ -9,8 +9,6 @@ import {experiences} from '../content/experiences'
 import {posts} from '../content/posts'
 import {projects} from '../content/projects'
 import Button from "../components/Button"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import { services } from '../content/services'
 import Service from '../components/Service'
 
@@ -95,10 +93,8 @@ const Home: NextPage = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <Button href='mailto:hello@trishalim.com' className='mx-auto mt-8'>
+                        <Button href='mailto:hello@trishalim.com' className='mx-auto mt-8' icon='fa-solid:envelope'>
                             Inquire by email
-
-                            <FontAwesomeIcon icon={faEnvelope} className="ml-3 w-4 h-4" />
                         </Button>
                     </div>
                 </section>

@@ -1,8 +1,7 @@
 import ITestimonial from "../types/testimonial"
 import Image from 'next/image'
-import {faQuoteLeft} from "@fortawesome/free-solid-svg-icons"
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Icon } from "@iconify/react"
 
 const Testimonial = (props: {
     content: ITestimonial
@@ -17,10 +16,7 @@ const Testimonial = (props: {
         <figure className='relative pt-2 text-xl leading-8 max-w-2xl'>
             {description}
 
-            <FontAwesomeIcon
-                icon={faQuoteLeft}
-                className='w-8 text-primary opacity-10 absolute top-0 -left-2'
-            />
+            <Icon icon='bxs:quote-alt-left' className='text-7xl text-primary opacity-10 absolute -top-3 -left-4'/>
 
             <figcaption className='flex items-center mt-5 text-base'>
                 <Image className='rounded-full' src={imageUrl} width='50' height='50' alt={`photo of ${name}`} />
