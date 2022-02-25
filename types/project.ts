@@ -2,7 +2,7 @@ import { Skill } from "./skill"
 import { ReactNode } from "react"
 import Testimonial from "./testimonial"
 
-export interface Project {
+export default interface Project {
   title: string;
   link: string;
   imageUrl: string;

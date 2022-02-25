@@ -1,6 +1,6 @@
 import { projects } from '../../content/projects'
-import { Skill } from '../../components/Skill'
-import { Project } from '../../components/Project'
+import Skill from '../../components/Skill'
+import Project from '../../components/Project'
 import SiteLayout from '../../components/SiteLayout'
 import Link from 'next/link'
 import Carousel from "../../components/Carousel"

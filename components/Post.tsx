@@ -1,10 +1,10 @@
 import React, {ReactElement} from "react"
-import {Content as IContent} from "../types/content"
+import IContent from "../types/content"
 import Link from 'next/link'
 import Image from "next/image"
 import Icon from "./Icon"
 
-export const Content = (props: {
+const Post = (props: {
     content: IContent
 }): ReactElement => {
     const {
@@ -31,3 +31,5 @@ export const Content = (props: {
         </Link>
     )
 }
+
+export default Post

@@ -1,6 +1,6 @@
 import Button from "./Button"
 import React from "react"
-import { Socials } from './Socials'
+import Socials from './Socials'
 
 const Footer = () => {
     return (

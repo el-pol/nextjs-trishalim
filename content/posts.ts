@@ -1,4 +1,6 @@
-export const posts = [
+import Post from '../types/post'
+
+export const posts: Array<Post> = [
     {
         title: 'Digital Nomad Guide for Koh Phangan, Thailand',
         imageUrl: 'https://blog.trishalim.com/content/images/2022/02/IMG_0140-1.jpeg',

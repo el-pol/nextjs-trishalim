@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import { Header } from './Header'
 import Footer from './Footer'
+import {ReactNode} from "react"
 
-// @ts-ignore
-export default function SiteLayout({ children }) {
+const SiteLayout = ({
+    children
+}: {
+    children: ReactNode
+}) => {
     const title = `Trisha Lim - Frontend Engineer`
     const description = `Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.`
 
@@ -38,3 +42,5 @@ export default function SiteLayout({ children }) {
         </div>
     )
 }
+
+export default SiteLayout

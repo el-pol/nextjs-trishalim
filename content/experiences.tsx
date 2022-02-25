@@ -1,4 +1,4 @@
-import {Experience} from "../types/experience"
+import Experience from "../types/experience"
 import {skills} from "./skills"
 import {projects} from "./projects"
 

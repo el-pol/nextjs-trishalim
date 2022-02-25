@@ -1,8 +1,8 @@
 import {ReactElement} from "react"
-import {Skill as ISkill} from "../types/skill"
+import ISkill from "../types/skill"
 import Link from 'next/link'
 
-export const Skill = (props: {
+const Skill = (props: {
     content: ISkill
 }): ReactElement => {
     const {
@@ -18,3 +18,5 @@ export const Skill = (props: {
         </Link>
     )
 }
+
+export default Skill

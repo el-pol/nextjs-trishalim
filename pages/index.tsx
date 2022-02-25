@@ -1,10 +1,10 @@
 import type {NextPage} from 'next'
 import React from 'react'
-import {Content} from '../components/Content'
+import Post from '../components/Post'
 import Experience from '../components/Experience'
-import {Project} from '../components/Project'
+import Project from '../components/Project'
 import SiteLayout from '../components/SiteLayout'
-import {Socials} from '../components/Socials'
+import Socials from '../components/Socials'
 import {experiences} from '../content/experiences'
 import {posts} from '../content/posts'
 import {projects} from '../content/projects'
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                     <h2 className="mb-8">Latest Posts</h2>
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {
-                            posts.slice(0, 3).map((c) => <div key={c.link}><Content content={c}/>
+                            posts.slice(0, 3).map((c) => <div key={c.link}><Post content={c}/>
                             </div>)
                         }
                     </div>

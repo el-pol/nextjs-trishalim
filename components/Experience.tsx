@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React, {ReactElement} from "react"
-import {Experience as IExperience} from "../types/experience"
+import IExperience from "../types/experience"
 
 const Experience = (props: {
     content: IExperience

@@ -1,8 +1,8 @@
 import SiteLayout from '../components/SiteLayout'
 import { experiences } from '../content/experiences'
 import Link from "next/link"
-import { Skill } from "../components/Skill"
-import { Project } from "../components/Project"
+import Skill from "../components/Skill"
+import Project from "../components/Project"
 import React from "react"
 import SkillsSection from "../components/SkillsSection"
 

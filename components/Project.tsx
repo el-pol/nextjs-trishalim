@@ -1,9 +1,9 @@
 import React, {ReactElement} from "react"
-import {Project as IProject} from "../types/project"
+import IProject from "../types/project"
 import Link from 'next/link'
 import Image from 'next/image'
 
-export const Project = (props: {
+const Project = (props: {
     content: IProject
 }): ReactElement => {
     const {
@@ -29,3 +29,5 @@ export const Project = (props: {
         </Link>
     )
 }
+
+export default Project

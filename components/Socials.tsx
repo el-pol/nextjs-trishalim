@@ -2,7 +2,7 @@ import React, { ReactElement } from "react"
 import Link from "next/link"
 import Icon from "./Icon"
 
-export const Socials = (props: {
+const Socials = (props: {
   size?: 'sm' | 'md'
   className?: string
 }): ReactElement => {
@@ -60,3 +60,5 @@ export const Socials = (props: {
     </div>
   )
 }
+
+export default Socials

@@ -1,5 +1,5 @@
 import {projects} from "../../content/projects"
-import {Project} from "../../components/Project"
+import Project from "../../components/Project"
 import React from "react"
 import SiteLayout from "../../components/SiteLayout"
 import SkillsSection from "../../components/SkillsSection"

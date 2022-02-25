@@ -1,4 +1,4 @@
-export interface Content {
+export default interface Post {
   imageUrl: string;
   title: string;
   link: string;

@@ -1,5 +1,5 @@
 import SiteLayout from '../components/SiteLayout'
-import {Project} from '../components/Project'
+import Project from '../components/Project'
 import Icon from '../components/Icon'
 import React from "react"
 import {skills} from "../content/skills"

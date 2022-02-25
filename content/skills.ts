@@ -1,4 +1,4 @@
-import { Skill } from "../types/skill"
+import Skill from "../types/skill"
 
 export const skills: { [key: string]: Skill } = {
     react: {

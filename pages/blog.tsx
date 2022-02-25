@@ -1,7 +1,7 @@
 import SiteLayout from "../components/SiteLayout"
 import React from "react"
 import {posts} from "../content/posts"
-import {Content} from "../components/Content"
+import Post from "../components/Post"
 
 const Blog = () => {
     return (
@@ -10,7 +10,7 @@ const Blog = () => {
                 <h2 className="mb-8">Blog</h2>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {
-                        posts.map((c) => <div key={c.link}><Content content={c}/>
+                        posts.map((c) => <div key={c.link}><Post content={c}/>
                         </div>)
                     }
                 </div>
