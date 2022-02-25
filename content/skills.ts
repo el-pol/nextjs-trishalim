@@ -18,7 +18,7 @@ export const skills: { [key: string]: Skill } = {
     },
     angular: {
         name: 'Angular',
-        icon: 'logos:angular',
+        icon: 'logos:angular-icon',
         slug: 'angular',
     },
     html: {
@@ -78,7 +78,7 @@ export const skills: { [key: string]: Skill } = {
     },
     spring: {
         name: 'Spring',
-        icon: 'logos:spring',
+        icon: 'logos:spring-icon',
         slug: 'spring',
     },
     java: {
@@ -98,12 +98,10 @@ export const skills: { [key: string]: Skill } = {
     },
     scrum: {
         name: 'Scrum',
-        icon: 'subway:round-arrow-2',
         slug: 'scrum',
     },
     ux: {
         name: 'UI/UX Design',
-        icon: 'logos:codicon:terminal-tmux',
         slug: 'ux',
     },
     instantsearchjs: {

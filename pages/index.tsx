@@ -11,6 +11,7 @@ import {projects} from '../content/projects'
 import Button from "../components/Button"
 import { services } from '../content/services'
 import Service from '../components/Service'
+import SkillLogos from "../components/SkillLogos";
 
 const Home: NextPage = () => {
     return (
@@ -79,11 +80,11 @@ const Home: NextPage = () => {
                             </div>
                         ))}
                     </div>
+
                     <div className='flex justify-center mt-8'>
                         <Button href='/projects'>See all projects</Button>
                     </div>
                 </section>
-
 
                 <section className='my-16'>
                     <h2 className='mb-8'>Services</h2>
@@ -97,6 +98,12 @@ const Home: NextPage = () => {
                             Inquire by email
                         </Button>
                     </div>
+                </section>
+
+                <section className='my-16'>
+                    <h2 className='mb-8'>Skills</h2>
+
+                    <SkillLogos className='max-w-3xl justify-center gap-8 text-3xl md:text-4xl m-auto' />
                 </section>
 
                 <section className='my-16'>
