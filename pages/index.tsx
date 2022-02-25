@@ -11,7 +11,7 @@ import {projects} from '../content/projects'
 import Button from "../components/Button"
 import { services } from '../content/services'
 import Service from '../components/Service'
-import SkillLogos from "../components/SkillLogos";
+import SkillLogos from "../components/SkillLogos"
 
 const Home: NextPage = () => {
     return (
