@@ -1,5 +1,28 @@
 const colors = require('tailwindcss/colors')
 
+/**
+ * See full Tailwind color palette options here
+ * https://tailwindcss.com/docs/customizing-colors#default-color-palette
+ */
+
+// Choose a primary color from Tailwind's set of colors,
+// or define your own
+
+// const primary = colors.rose
+// const primary = colors.emerald
+// const primary = colors.teal
+// const primary = colors.cyan
+// const primary = colors.sky
+// const primary = colors.blue
+// const primary = colors.violet
+// const primary = colors.purple
+// const primary = colors.pink
+// const primary = colors.rose
+const primary = {
+  ...colors.pink,
+  '500': '#FF1B75'
+}
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,10 +32,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pink: {
-          DEFAULT: '#FF1B75',
-        },
-        primary: colors.pink
+        primary: {
+          ...primary,
+          DEFAULT: primary['500']
+        }
       }
     },
   },

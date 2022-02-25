@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                         <h2 className="my-3 text-xl  sm:text-2xl">Frontend Engineer ✨</h2>
                     </div>
                     <div className='my-5 mx-auto w-4/12 md:w-2/12'>
-                        <img src="/profile.png" alt="Trisha Lim" width={144} className='mx-auto rounded-full border-pink border-4 overflow-hidden' />
+                        <img src="/profile.png" alt="Trisha Lim" width={144} className='mx-auto rounded-full border-primary border-4 overflow-hidden' />
                     </div>
                 </div>
 

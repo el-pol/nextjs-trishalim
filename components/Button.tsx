@@ -15,7 +15,7 @@ const Button = (props: {
         <Link href={href} passHref>
             <a
                 target={target}
-                className={`text-center inline-flex items-center justify-center font-semibold border-2 border-pink bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition ${className}`}>
+                className={`text-center inline-flex items-center justify-center font-semibold border-2 border-primary bg-primary hover:bg-white hover:text-primary text-white px-6 py-2 rounded transition ${className}`}>
                 {children}
                 {icon && <Icon icon={icon} className='ml-3 text-[1.07em]' />}
             </a>
