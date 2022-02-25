@@ -22,7 +22,7 @@ export const Header = (): ReactElement => {
             url: '/blog',
         },
         {
-            title: 'Contact',
+            title: 'hello@trishalim.com',
             url: 'mailto:hello@trishalim.com'
         },
     ]
@@ -62,7 +62,7 @@ export const Header = (): ReactElement => {
                         links.map((link) => (
                             <Link href={link.url} key={link.url}>
                                 <a href={link.url}
-                                   className="font-semibold uppercase p-5 opacity-90 hover:opacity-100 tracking-wider text-xs">{link.title}</a>
+                                   className="p-5 opacity-90 hover:opacity-100 tracking-wider text-sm">{link.title}</a>
                             </Link>
                         ))
                     }
