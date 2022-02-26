@@ -3,7 +3,13 @@ import { Header } from "./Header";
 import Footer from "./Footer";
 import { ReactNode } from "react";
 
-const SiteLayout = ({ children }: { children: ReactNode }) => {
+const SiteLayout = ({
+  children,
+  showSkills = false,
+}: {
+  children: ReactNode;
+  showSkills?: boolean;
+}) => {
   const title = "Trisha Lim - Frontend Engineer";
   const description =
     "Frontend Engineer with 5+ years experience working on single page applications using React, Next.js, TypeScript.";
@@ -29,7 +35,7 @@ const SiteLayout = ({ children }: { children: ReactNode }) => {
         {children}
       </div>
 
-      <Footer />
+      <Footer showSkills={showSkills} />
     </div>
   );
 };

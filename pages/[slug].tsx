@@ -4,8 +4,7 @@ import Icon from "../components/Icon";
 import React from "react";
 import { skills } from "../content/skills";
 import { projects } from "../content/projects";
-import { Project as IProject } from "../types/project";
-import SkillsSection from "../components/SkillsSection";
+import IProject from "../types/project";
 
 interface ProjectPageProps {
   slug: string;
@@ -24,7 +23,7 @@ export default function ProjectPage(props: ProjectPageProps) {
   });
 
   return (
-    <SiteLayout>
+    <SiteLayout showSkills={true}>
       <main>
         <div className="container py-10 lg:py-16">
           <div className="mb-8 flex items-center">
@@ -41,8 +40,6 @@ export default function ProjectPage(props: ProjectPageProps) {
             <p>No projects found.</p>
           )}
         </div>
-
-        <SkillsSection title="Browse Projects by Skill" />
       </main>
     </SiteLayout>
   );

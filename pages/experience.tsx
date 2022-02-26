@@ -4,11 +4,10 @@ import Link from "next/link";
 import Skill from "../components/Skill";
 import Project from "../components/Project";
 import React from "react";
-import SkillsSection from "../components/SkillsSection";
 
 export default function ExperiencePage() {
   return (
-    <SiteLayout>
+    <SiteLayout showSkills={true}>
       <main className="container py-10 lg:py-16">
         <h2 className="mb-8">Work Experience</h2>
         <div>
@@ -59,8 +58,6 @@ export default function ExperiencePage() {
           ))}
         </div>
       </main>
-
-      <SkillsSection />
     </SiteLayout>
   );
 }
