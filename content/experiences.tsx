@@ -36,13 +36,7 @@ export const experiences: Array<Experience> = [
       skills.algolia,
       skills.redux,
     ],
-    projects: [
-      projects.educaider,
-      projects.dubber,
-      projects.nzma,
-      projects.nzst,
-      projects.apolinar,
-    ],
+    projects: [projects.nzst, projects.apolinar],
   },
   {
     position: "Frontend Engineer",
@@ -60,6 +54,7 @@ export const experiences: Array<Experience> = [
       </p>
     ),
     skills: [skills.angular, skills.js, skills.ts, skills.git, skills.scrum],
+    projects: [projects.educaider, projects.dubber, projects["dancer-tribe"]],
   },
   {
     position: "Full-Stack Engineer",
@@ -84,33 +79,6 @@ export const experiences: Array<Experience> = [
       skills.spring,
       skills.java,
     ],
-  },
-  {
-    position: "Firmware Engineer",
-    company: "Lexmark Research & Development",
-    dateStart: "May 2016",
-    dateEnd: "Mar 2017",
-    link: "https://www.lexmark.com/en_us.html",
-    snippet: "I developed UI for printers using C++ in a Linux environment.",
-    description: (
-      <p>I developed UI for printers using C++ in a Linux environment.</p>
-    ),
-    skills: [skills.cpp, skills.git, skills.scrum],
-  },
-  {
-    position: "Software Engineer (Intern)",
-    company: "Azeus",
-    dateStart: "Apr 2015",
-    dateEnd: "May 2015",
-    link: "https://www.azeus.com/",
-    snippet: `I underwent trainings on React and SQL, then developed a web app
-            using said technologies.`,
-    description: (
-      <p>
-        I underwent trainings on React and SQL, then developed a web app using
-        said technologies.
-      </p>
-    ),
-    skills: [skills.react, skills.mysql, skills.spring, skills.java],
+    projects: [projects.nzma],
   },
 ];

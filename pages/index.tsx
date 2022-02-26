@@ -80,8 +80,6 @@ const Home: NextPage = () => {
             </a>
             .
           </p>
-
-          <p className="mb-12">📍 Koh Phangan, Thailand.</p>
         </section>
 
         <Socials />

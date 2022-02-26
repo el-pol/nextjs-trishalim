@@ -1,6 +1,5 @@
 import Project from "../types/project";
 import { skills } from "./skills";
-import React from "react";
 
 const dancerTribe = {
   title: "Dancer Tribe",
@@ -27,19 +26,12 @@ const dancerTribe = {
     "/project-dancer-tribe-3.png",
   ],
   testimonials: [
-    // {
-    //     name: 'Judith Black',
-    //     position: 'CEO, Tuple',
-    //     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
-    //     imageUrl: '/profile.png'
-    // },
-    //
-    // {
-    //     name: 'Judith Black',
-    //     position: 'CEO, Tuple',
-    //     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
-    //     imageUrl: '/profile.png'
-    // }
+    {
+      name: "Judith Black",
+      position: "CEO, Tuple",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+      imageUrl: "/profile.png",
+    },
   ],
 };
 
@@ -67,6 +59,14 @@ const educaider = {
     "/project-educaider-2.png",
     "/project-educaider-3.png",
   ],
+  testimonials: [
+    {
+      name: "Judith Black",
+      position: "CEO, Tuple",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+      imageUrl: "/profile.png",
+    },
+  ],
 };
 
 const dubber = {
@@ -82,54 +82,13 @@ const dubber = {
   snippet:
     "Marketing website for the world's leading provider of cloud-based call recording and voice AI",
   skills: [skills.react, skills.nextjs, skills.ts, skills.contentful],
-};
-
-const ipinfo = {
-  title: "IPinfo",
-  link: "https://ipinfo.io/",
-  imageUrl: "/project-ipinfo.jpg",
-  slug: "ipinfo",
-  snippet: "Marketing website and tools for making IP address data more usable",
-  description: "",
-  images: [
-    "/project-ipinfo-1.png",
-    "/project-ipinfo-2.png",
-    "/project-ipinfo-3.png",
-  ],
-  skills: [
-    skills.react,
-    skills.nextjs,
-    skills.html,
-    skills.tailwind,
-    skills.js,
-  ],
-  body: (
-    <>
-      <p>
-        IPinfo is the trusted source for IP address information, handling 40
-        billion IP geolocation API requests per month for over 1,000 businesses
-        and 100,000+ developers.
-      </p>
-      <p>
-        I worked on their design system to ensure that designs are translated
-        well and accurately, and that components are created for maximum
-        reusability. They were previously using jQuery and Bootstrap, so I
-        refactored existing code to use modern technologies like React, Next.js
-        and Tailwind - making the code easier to maintain and build on top of.
-      </p>
-      <p>
-        I also worked on tools that make their IP address data more usable,
-        helping users apply IP insights better and test data precision. The
-        following tools are:
-      </p>
-    </>
-  ),
-  links: [
-    "https://ipinfo.io/tools/summarize-ips",
-    "https://ipinfo.io/tools/map",
-    "https://ipinfo.io/tools/cidr-to-ip-range-converter",
-    "https://ipinfo.io/tools/reverse-dns-lookup",
-    "https://ipinfo.io/tools/pingable-ips",
+  testimonials: [
+    {
+      name: "Judith Black",
+      position: "CEO, Tuple",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+      imageUrl: "/profile.png",
+    },
   ],
 };
 
@@ -159,6 +118,14 @@ const nzst = {
         I developed the CMS components needed to accomplish the design.
       `,
   skills: [skills.react, skills.nextjs, skills.ts, skills.contentful],
+  testimonials: [
+    {
+      name: "Judith Black",
+      position: "CEO, Tuple",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+      imageUrl: "/profile.png",
+    },
+  ],
 };
 
 const apolinar = {
@@ -172,12 +139,20 @@ const apolinar = {
         implementing the design of their landing page.
       `,
   skills: [skills.html, skills.sass, skills.js],
+  testimonials: [
+    {
+      name: "Judith Black",
+      position: "CEO, Tuple",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna eu quam consectetur blandit. Morbi gravida vel nunc sed imperdiet. Aliquam sit amet tortor sem. Vivamus dapibus luctus elit, sit amet consectetur nisl vehicula vel. Nullam ut ex ut felis rhoncus convallis consectetur ac tellus.`,
+      imageUrl: "/profile.png",
+    },
+  ],
 };
 
 export const projects: { [key: string]: Project } = {
   "dancer-tribe": {
     ...dancerTribe,
-    otherProjects: [educaider, ipinfo, nzst],
+    otherProjects: [educaider, nzst],
   },
   educaider: {
     ...educaider,
@@ -185,19 +160,15 @@ export const projects: { [key: string]: Project } = {
   },
   dubber: {
     ...dubber,
-    otherProjects: [dancerTribe, apolinar, ipinfo],
-  },
-  ipinfo: {
-    ...ipinfo,
-    otherProjects: [nzst, dubber, dancerTribe],
+    otherProjects: [dancerTribe, apolinar],
   },
   nzma: {
     ...nzma,
-    otherProjects: [ipinfo, educaider, dancerTribe],
+    otherProjects: [educaider, dancerTribe],
   },
   nzst: {
     ...nzst,
-    otherProjects: [ipinfo, dubber, apolinar],
+    otherProjects: [educaider, dubber, apolinar],
   },
   apolinar: {
     ...apolinar,

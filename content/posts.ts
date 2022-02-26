@@ -17,14 +17,4 @@ export const posts: Array<Post> = [
     imageUrl: "/content-react-context.png",
     link: "https://dev.to/trishathecookie/react-creating-a-reusable-form-using-react-context-5eof",
   },
-  {
-    title: "Best Investments I've Made Before 25",
-    imageUrl: "/blog-best-investments-i-made-before-25.jpeg",
-    link: "https://trisha-lim.ghost.io/best-investments-ive-made-before-25/",
-  },
-  {
-    title: "Magical Sakura Days in Japan",
-    imageUrl: "/blog-magical-sakura-days-in-japan.jpeg",
-    link: "https://trisha-lim.ghost.io/magical-sakura-days-in-kyoto-japan/",
-  },
 ];
