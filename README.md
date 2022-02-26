@@ -1,8 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+```bash
+npm i
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,21 +19,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Writing Content for Your Portfolio
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Most of the content can be found under `/content`.
+- `/content/skills.ts` is a list of tech/skills that you use with their corresponding icons from Iconfiy.
+- `/content/experiences.ts` is a list of your work history in a resume/CV format.
+- `/content/posts.ts` is a list of blog posts.
+- `/content/projects.tsx` is a list of projects you've worked in, the tech you used, and some images to showcase your work.
+- `/content/services.ts` is a list of services you offer to clients.
 
-## Learn More
+Make sure to also modify `/components/SiteLayout.tsx` for SEO.
 
-To learn more about Next.js, take a look at the following resources:
+For project and blog images, stick with a 4x3 ratio.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Resources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Iconify](https://iconify.design/) for icons and logos
+- [Tailwind Documentation](https://tailwindcss.com/) for CSS
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Deploy on Vercel](https://nextjs.org/docs/deployment)
