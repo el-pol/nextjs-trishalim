@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           </div>
           <div className="my-5 mx-auto w-4/12 md:w-2/12">
             <img
-              src="/profile.png"
+              src="/profile.jpg"
               alt="Trisha Lim"
               width={144}
               className="mx-auto rounded-full border-primary border-4 overflow-hidden"
