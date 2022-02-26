@@ -13,13 +13,13 @@ const Experience = (props: { content: IExperience }): ReactElement => {
       </p>
       <div className="md:flex flex-wrap items-center justify-between md:w-8/12">
         <div className="flex my-2">
-          <h3 className="text-xl mr-5">
+          <h2 className="text-xl mr-5">
             <Link href={link}>
               <a href={link} target="_blank" rel="nofollow noreferrer">
                 {position} at {company}
               </a>
             </Link>
-          </h3>
+          </h2>
         </div>
         <p>{snippet}</p>
       </div>

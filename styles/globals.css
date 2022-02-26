@@ -5,15 +5,18 @@
 
 @layer base {
   h1 {
-    @apply text-6xl;
+    @apply text-4xl;
+    @apply md:text-5xl;
     @apply font-semibold;
   }
   h2 {
-    @apply text-5xl;
+    @apply text-3xl;
+    @apply md:text-4xl;
     @apply font-semibold;
   }
   h3 {
-    @apply text-4xl;
+    @apply text-2xl;
+    @apply md:text-3xl;
     @apply font-semibold;
   }
   h4 {

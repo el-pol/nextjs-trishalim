@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <SiteLayout>
       <main className="container py-10 lg:py-16">
-        <h2 className="mb-8">Blog</h2>
+        <h1 className="mb-8">Blog</h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {posts.map((c) => (
             <div key={c.link}>

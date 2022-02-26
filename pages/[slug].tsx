@@ -26,9 +26,9 @@ export default function ProjectPage(props: ProjectPageProps) {
     <SiteLayout showSkills={true}>
       <main>
         <div className="container py-10 lg:py-16">
-          <div className="mb-8 flex items-center">
+          <div className="mb-12 flex items-center">
             {icon && <Icon icon={icon} className="block mr-5 text-5xl" />}
-            <h2 className="text-2xl md:text-3xl">{name} Projects</h2>
+            <h1 className="">{name} Projects</h1>
           </div>
           {projectList?.length ? (
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">

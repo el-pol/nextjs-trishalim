@@ -9,13 +9,13 @@ export default function ExperiencePage() {
   return (
     <SiteLayout showSkills={true}>
       <main className="container py-10 lg:py-16">
-        <h2 className="mb-8">Work Experience</h2>
+        <h1 className="mb-8">Work Experience</h1>
         <div>
           {experiences.map((e) => (
             <div className="mb-10" key={e.company}>
               <div className="md:flex flex-wrap items-center justify-between">
                 <div className="flex my-2">
-                  <h3 className="text-xl mr-5">
+                  <h3 className="mr-5">
                     <Link href={e.link}>
                       <a
                         href={e.link}

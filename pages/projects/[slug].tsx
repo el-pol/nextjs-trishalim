@@ -39,7 +39,7 @@ export default function ProjectPage(props: ProjectPageProps) {
       <main className="container pt-10 pb-32 lg:pt-16">
         <div>
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-2xl md:text-3xl w-full md:w-8/12">{title}</h1>
+            <h1 className="w-full md:w-8/12">{title}</h1>
             <span className="hidden md:flex">{button}</span>
           </div>
 
@@ -104,9 +104,7 @@ export default function ProjectPage(props: ProjectPageProps) {
         </div>
 
         <section className="mt-16">
-          <h2 className="text-2xl md:text-3xl mb-12 text-center">
-            Other Projects
-          </h2>
+          <h2 className="mb-12 text-center">Other Projects</h2>
           <div className="grid md:grid-cols-3 gap-y-8 md:gap-8">
             {otherProjects?.map((project) => (
               <div key={project.slug}>
@@ -122,9 +120,7 @@ export default function ProjectPage(props: ProjectPageProps) {
         </section>
 
         <section className="mt-20">
-          <h2 className="text-2xl md:text-3xl mb-12 text-center">
-            Browse Projects by Skill
-          </h2>
+          <h2 className="mb-12 text-center">Browse Projects by Skill</h2>
 
           <SkillLogos className="max-w-3xl justify-center gap-8 text-3xl md:text-4xl m-auto" />
         </section>

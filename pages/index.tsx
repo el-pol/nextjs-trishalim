@@ -19,8 +19,8 @@ const Home: NextPage = () => {
       <main className="container py-5 lg:py-12">
         <div className="flex w-full justify-between items-center flex-wrap flex-row-reverse md:flex-row mt-8">
           <div className="my-5 text-center md:text-left w-full md:w-10/12">
-            <h1 className="font-bold text-4xl sm:text-6xl">Trisha Lim</h1>
-            <h2 className="my-3 text-xl  sm:text-2xl">Frontend Engineer ✨</h2>
+            <h1 className="font-bold text-5xl md:text-6xl">Trisha Lim</h1>
+            <h2 className="my-3 text-xl sm:text-2xl">Frontend Engineer ✨</h2>
           </div>
           <div className="my-5 mx-auto w-4/12 md:w-2/12">
             <img
