@@ -9,14 +9,16 @@ import Button from "../../components/Button";
 import Testimonial from "../../components/Testimonial";
 import Image from "next/image";
 import SkillLogos from "../../components/SkillLogos";
+import { GetStaticProps } from "next";
 
-interface ProjectPageProps {
+interface ProjectsPageProps {
   slug: string;
 }
 
-export default function ProjectPage(props: ProjectPageProps) {
+const ProjectsPage = (props: ProjectsPageProps) => {
   const { slug } = props;
   const project = projects[slug];
+
   const {
     title,
     description,
@@ -127,22 +129,38 @@ export default function ProjectPage(props: ProjectPageProps) {
       </main>
     </SiteLayout>
   );
-}
+};
 
-// @ts-ignore
-export function getServerSideProps({ query }) {
-  const { slug } = query;
-  const project = projects[slug];
+export const getStaticPaths = async () => {
+  return {
+    paths: Object.keys(projects).map((key) => ({
+      params: { slug: key },
+    })),
+    fallback: "blocking",
+  };
+};
 
-  if (!project) {
-    return {
-      notFound: true,
-    };
+export const getStaticProps: GetStaticProps = async (context) => {
+  if (context.params) {
+    const { slug } = context.params;
+
+    if (slug) {
+      // @ts-ignore
+      const project = projects[slug];
+
+      if (project) {
+        return {
+          props: {
+            slug,
+          },
+        };
+      }
+    }
   }
 
   return {
-    props: {
-      slug,
-    },
+    notFound: true,
   };
-}
+};
+
+export default ProjectsPage;

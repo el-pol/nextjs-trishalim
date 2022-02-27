@@ -32,9 +32,11 @@ Make sure to also modify `/components/SiteLayout.tsx` for SEO.
 
 For project and blog images, stick with a 4x3 ratio.
 
+## Deployment
+[Deploy on Vercel](https://vercel.com/guides/deploying-nextjs-with-vercel)
+
 ## Resources
 
 - [Iconify](https://iconify.design/) for icons and logos
 - [Tailwind Documentation](https://tailwindcss.com/) for CSS
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Deploy on Vercel](https://nextjs.org/docs/deployment)

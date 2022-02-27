@@ -5,6 +5,7 @@ import React from "react";
 import { skills } from "../content/skills";
 import { projects } from "../content/projects";
 import IProject from "../types/project";
+import { GetStaticProps } from "next";
 
 interface ProjectPageProps {
   slug: string;
@@ -13,6 +14,9 @@ interface ProjectPageProps {
 export default function ProjectPage(props: ProjectPageProps) {
   const { slug } = props;
   const skill = skills[slug];
+
+  if (!skill) return null;
+
   const { name, icon } = skill;
   const projectList: Array<IProject> = [];
 
@@ -45,20 +49,38 @@ export default function ProjectPage(props: ProjectPageProps) {
   );
 }
 
-// @ts-ignore
-export function getServerSideProps({ query }) {
-  const { slug } = query;
-  const skill = skills[slug];
-
-  if (!skill) {
-    return {
-      notFound: true,
-    };
-  }
+export const getStaticPaths = async () => {
+  const paths = Object.keys(skills).map((key) => ({
+    params: { slug: skills[key].slug },
+  }));
 
   return {
-    props: {
-      slug,
-    },
+    paths,
+    fallback: "blocking",
   };
-}
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  if (context.params) {
+    const { slug } = context.params;
+
+    if (slug) {
+      // @ts-ignore
+      const skill = skills[slug];
+
+      if (skill) {
+        return {
+          props: {
+            slug,
+          },
+        };
+      }
+    }
+  }
+
+  console.log(">>>> not found");
+
+  return {
+    notFound: true,
+  };
+};
