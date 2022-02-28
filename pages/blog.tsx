@@ -2,6 +2,7 @@ import SiteLayout from "../components/SiteLayout";
 import React from "react";
 import { posts } from "../content/posts";
 import Post from "../components/Post";
+import TemplatePromo from "../components/TemplatePromo";
 
 const Blog = () => {
   return (
@@ -15,6 +16,8 @@ const Blog = () => {
             </div>
           ))}
         </div>
+
+        <TemplatePromo className="my-16" />
       </main>
     </SiteLayout>
   );

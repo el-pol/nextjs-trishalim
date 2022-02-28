@@ -12,6 +12,7 @@ import Button from "../components/Button";
 import { services } from "../content/services";
 import Service from "../components/Service";
 import SkillLogos from "../components/SkillLogos";
+import TemplatePromo from "../components/TemplatePromo";
 
 const Home: NextPage = () => {
   return (
@@ -156,6 +157,8 @@ const Home: NextPage = () => {
             <Button href="/blog">See all posts</Button>
           </div>
         </section>
+
+        <TemplatePromo className="my-16" />
       </main>
     </SiteLayout>
   );
