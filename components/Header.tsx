@@ -33,7 +33,7 @@ export const Header = (): ReactElement => {
         <div className="md:hidden w-full flex justify-between items-center px-5">
           <div>
             <Link href="/" passHref>
-              <a className="text-xl font-semibold">Trisha Lim</a>
+              <a className="text-xl font-semibold">Timothy Jonathan</a>
             </Link>
           </div>
           <div className="relative">

@@ -10,7 +10,7 @@ const colors = require("tailwindcss/colors");
 
 // const primary = colors.rose
 // const primary = colors.emerald
-// const primary = colors.teal
+const primary = colors.teal
 // const primary = colors.cyan
 // const primary = colors.sky
 // const primary = colors.blue
@@ -18,10 +18,10 @@ const colors = require("tailwindcss/colors");
 // const primary = colors.purple
 // const primary = colors.pink
 // const primary = colors.rose
-const primary = {
-  ...colors.pink,
-  500: "#FF1B75",
-};
+// const primary = {
+//   ...colors.pink,
+//   500: "#FF1B75",
+// };
 
 module.exports = {
   content: [
