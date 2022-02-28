@@ -154,11 +154,26 @@ const nzst = {
   imageUrl: "/project-nzst.jpg",
   slug: "nzst",
   snippet: "A content-managed website for NZST",
-  description: `
-        A content-managed marketing website and blog for New Zealand School of Tourism.
-        I developed the CMS components needed to accomplish the design.
-      `,
+  description: (
+    <>
+      <p>
+        I worked on the New Zealand School of Tourism marketing website. This is
+        a very flexible content-managed website where editors can completely
+        change the layout, add new pages, add subpages, and navigation. They
+        also have a lot control over the blog. Almost everything on this site is
+        editable with no code required. I made it flexible enough for editors to
+        have a lot of options, but restrictive enough that they stick with their
+        brand.
+      </p>
+    </>
+  ),
   skills: [skills.react, skills.nextjs, skills.ts, skills.contentful],
+  images: [
+    "/project-nzst-4.png",
+    "/project-nzst-1.png",
+    "/project-nzst-2.png",
+    "/project-nzst-3.png",
+  ],
 };
 
 const apolinar = {
@@ -175,9 +190,9 @@ const apolinar = {
 };
 
 export const projects: { [key: string]: Project } = {
-  "dancer-tribe": {
-    ...dancerTribe,
-    otherProjects: [educaider, ipinfo, nzst],
+  nzst: {
+    ...nzst,
+    otherProjects: [ipinfo, dubber, apolinar],
   },
   educaider: {
     ...educaider,
@@ -195,12 +210,12 @@ export const projects: { [key: string]: Project } = {
     ...nzma,
     otherProjects: [ipinfo, educaider, dancerTribe],
   },
-  nzst: {
-    ...nzst,
-    otherProjects: [ipinfo, dubber, apolinar],
-  },
   apolinar: {
     ...apolinar,
     otherProjects: [dubber, dancerTribe, educaider],
+  },
+  "dancer-tribe": {
+    ...dancerTribe,
+    otherProjects: [educaider, ipinfo, nzst],
   },
 };

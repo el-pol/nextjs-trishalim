@@ -6,7 +6,7 @@ export default interface Project {
   title: string;
   link: string;
   imageUrl: string;
-  description: string;
+  description: string | ReactNode;
   skills?: Array<Skill>;
   slug: string;
   snippet?: string;
