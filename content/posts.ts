@@ -4,7 +4,7 @@ export const posts: Array<Post> = [
   {
     title: "How to Make a Web Developer Portfolio in 2022",
     imageUrl: "/blog-how-to-make-a-web-developer-portfolio.png",
-    link: "https://dev.to/trishathecookie/how-to-create-a-portfolio-website-that-converts-for-software-developers-2a5h"
+    link: "https://dev.to/trishathecookie/how-to-create-a-portfolio-website-that-converts-for-software-developers-2a5h",
   },
   {
     title: "Digital Nomad Guide for Koh Phangan, Thailand",
