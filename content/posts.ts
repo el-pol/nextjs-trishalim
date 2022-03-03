@@ -3,7 +3,7 @@ import Post from "../types/post";
 export const posts: Array<Post> = [
   {
     title: "How to Make a Web Developer Portfolio in 2022",
-    imageUrl: "/blog-how-to-make-a-web-developer-portfolio.png",
+    imageUrl: "/blog-how-to-make-a-web-developer-portfolio.jpg",
     link: "https://dev.to/trishathecookie/how-to-create-a-portfolio-website-that-converts-for-software-developers-2a5h",
   },
   {
