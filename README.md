@@ -32,8 +32,17 @@ Make sure to also modify `/components/SiteLayout.tsx` for SEO.
 
 For project and blog images, stick with a 4x3 ratio.
 
-## Deployment
-[Deploy on Vercel](https://vercel.com/guides/deploying-nextjs-with-vercel)
+For tips on writing your content, [check out this guide](https://dev.to/trishathecookie/how-to-create-a-portfolio-website-that-converts-for-software-developers-2a5h).
+
+## Deployment on Vercel
+1. Create a GitHub repository for your project.
+2. Push this project to that repository.
+3. Sign up for an account on [Vercel](https://vercel.com/signup). Make sure to click "Continue with GitHub".
+4. Give Vercel the permissions to read the repositories in your GitHub account.
+5. You will see a list of all your GitHub repositories. Select the repository for this project.
+6. Click Deploy button.
+7. On the dashboard, you will see your app deployment progress and a link. Every time you make changes to your `master` branch, it will trigger a deployment and update your website.
+8. Optional step: [add a custom domain](https://vercel.com/docs/concepts/projects/custom-domains).
 
 ## Resources
 
