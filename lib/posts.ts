@@ -10,3 +10,13 @@ export async function getPosts() {
       console.error(err);
     });
 }
+
+export async function getPost(slug: string) {
+  return await api.posts
+    .read({
+      slug,
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+}
