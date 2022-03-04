@@ -196,6 +196,14 @@ is the very first element in the post content */
   list-style: disc;
 }
 
+.gh-content ol li {
+  list-style: nu;
+}
+
 .gh-content figcaption {
   @apply text-center text-sm text-neutral-500 mt-2;
+}
+
+.gh-content pre {
+  @apply bg-gray-800 text-white p-3 rounded overflow-auto;
 }

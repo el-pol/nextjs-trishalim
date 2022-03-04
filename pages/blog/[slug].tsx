@@ -39,17 +39,12 @@ const getSrcSet = (url: string) => {
 };
 
 const BlogPost = (props: BlogPostProps) => {
-  const { title, html, feature_image, custom_excerpt } = props.post;
+  const { title, html, feature_image } = props.post;
 
   return (
     <SiteLayout>
       <div className="py-10 lg:py-16 ">
         <h1 className="my-8 max-w-2xl mx-auto">{title}</h1>
-        {custom_excerpt && (
-          <h2 className="font-light max-w-2xl mx-auto text-xl text-neutral-500 my-8">
-            {custom_excerpt}
-          </h2>
-        )}
         {feature_image && (
           <img
             srcSet={getSrcSet(feature_image)}
