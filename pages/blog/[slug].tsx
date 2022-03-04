@@ -8,21 +8,33 @@ interface BlogPostProps {
 }
 
 const BlogPost = (props: BlogPostProps) => {
-  const { title, html, feature_image, excerpt } = props.post;
+  const { title, html, feature_image, custom_excerpt } = props.post;
 
-  console.log(props.post);
+  const sizes = [300, 600, 1000, 2000];
+  const srcSet = feature_image
+    ? sizes
+        .map(
+          (size) =>
+            `${feature_image.replace(
+              "images",
+              `images/size/w${size}`
+            )} ${size}w`
+        )
+        .join(", ")
+    : undefined;
 
   return (
     <SiteLayout>
       <div className="py-10 lg:py-16 ">
         <h1 className="my-8 max-w-2xl mx-auto">{title}</h1>
-        {excerpt && (
+        {custom_excerpt && (
           <h2 className="font-light max-w-2xl mx-auto text-xl text-neutral-500 my-8">
-            {excerpt}
+            {custom_excerpt}
           </h2>
         )}
         {feature_image && (
           <img
+            srcSet={srcSet}
             src={feature_image}
             alt={title}
             className="mb-8 max-w-5xl mx-auto"
