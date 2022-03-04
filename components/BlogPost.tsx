@@ -35,12 +35,14 @@ const getSrcSet = (url: string) => {
 };
 
 const Post = (props: { content: PostOrPage }): ReactElement => {
-  const { feature_image, title, slug } = props.content;
+  const { feature_image, title, slug, tags } = props.content;
+
+  console.log(props.content);
 
   return (
     <Link href={`/blog/${slug}`} passHref>
       <a>
-        <div className="relative w-full h-60 sm:h-60 md:h-44 rounded mb-5 overflow-hidden">
+        <div className="relative w-full h-60 sm:h-60 md:h-44 rounded overflow-hidden">
           {feature_image && (
             <img
               src={feature_image}
@@ -56,6 +58,19 @@ const Post = (props: { content: PostOrPage }): ReactElement => {
             />
           </div>
         </div>
+
+        {tags && (
+          <div className="mt-2 mb-1">
+            {tags.map((tag) => (
+              <span
+                key={tag.id}
+                className="text-primary text-xs uppercase tracking-wider"
+              >
+                {tag.name}
+              </span>
+            ))}
+          </div>
+        )}
         <h3 className="text-xl">{title}</h3>
       </a>
     </Link>

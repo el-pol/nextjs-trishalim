@@ -5,6 +5,8 @@ export async function getPosts() {
     .browse({
       limit: "all",
       fields: ["id", "title", "slug", "feature_image"],
+      filter: "tags:[travel,tech]",
+      include: "tags",
     })
     .catch((err) => {
       console.error(err);

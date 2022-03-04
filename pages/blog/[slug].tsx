@@ -7,21 +7,39 @@ interface BlogPostProps {
   post: PostOrPage;
 }
 
+const getSrcSet = (url: string) => {
+  if (!url) return undefined;
+
+  const sizes = [
+    { imageWidth: 300, viewportWidth: 300 },
+    { imageWidth: 600, viewportWidth: 600 },
+    { imageWidth: 1000, viewportWidth: 1000 },
+    { imageWidth: 2000, viewportWidth: 2000 },
+  ];
+
+  if (url.startsWith("https://images.unsplash.com")) {
+    return sizes
+      .map(
+        (size) =>
+          `${url.replace("w=2000", `w=${size.imageWidth}`)} ${
+            size.viewportWidth
+          }w`
+      )
+      .join(", ");
+  }
+
+  return sizes
+    .map(
+      (size) =>
+        `${url.replace("images", `images/size/w${size.imageWidth}`)} ${
+          size.viewportWidth
+        }w`
+    )
+    .join(", ");
+};
+
 const BlogPost = (props: BlogPostProps) => {
   const { title, html, feature_image, custom_excerpt } = props.post;
-
-  const sizes = [300, 600, 1000, 2000];
-  const srcSet = feature_image
-    ? sizes
-        .map(
-          (size) =>
-            `${feature_image.replace(
-              "images",
-              `images/size/w${size}`
-            )} ${size}w`
-        )
-        .join(", ")
-    : undefined;
 
   return (
     <SiteLayout>
@@ -34,7 +52,7 @@ const BlogPost = (props: BlogPostProps) => {
         )}
         {feature_image && (
           <img
-            srcSet={srcSet}
+            srcSet={getSrcSet(feature_image)}
             src={feature_image}
             alt={title}
             className="mb-8 max-w-5xl mx-auto"
